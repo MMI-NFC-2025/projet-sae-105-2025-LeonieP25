@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Formulaire de contact pour joindre l'autrice du site.">
+	<title>Contact — Génésia</title>
+	<link rel="stylesheet" href="/src/css/style.css" />
+	<script type="module" src="/src/js/script.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="header__brand">
+			<span class="header__logo">Génésia</span>
+			<span class="header__lang">FR</span>
+		</div>
+		<nav class="header__nav">
+			<ul class="header__menu u-list-unstyled">
+				<li class="header__item"><a class="header__link" href="index.html">Accueil</a></li>
+				<li class="header__item"><a class="header__link" href="femme-ecran.html">Femmes à l’écran</a></li>
+				<li class="header__item"><a class="header__link" href="femmes-littérature-sci.html">Littérature scientifique</a></li>
+				<li class="header__item"><a class="header__link" href="nettie-stevens.html">Nettie Stevens</a></li>
+				<li class="header__item"><a class="header__link" href="objet.html">Objets de science</a></li>
+				<li class="header__item"><a class="header__link" href="a-propos.html">À propos</a></li>
+				<li class="header__item"><a class="header__link header__link--active" href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="main main--dark">
+		<section class="hero hero--contact">
+			<h1 class="hero__title">Contact</h1>
+			<p class="hero__subtitle">contact</p>
+		</section>
+
+		<section class="section section--contact-form">
+			<h2 class="section__title">Formulaire de contact</h2>
+			<div class="section__divider"></div>
+			<form class="contact-form" action="#" method="post">
+				<div class="contact-form__group">
+					<label class="contact-form__label" for="nom">Nom</label>
+					<input class="contact-form__input" type="text" id="nom" name="nom" placeholder="Entrez votre nom ici..." required />
+				</div>
+				<div class="contact-form__group">
+					<label class="contact-form__label" for="prenom">Prénom</label>
+					<input class="contact-form__input" type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom ici..." required />
+				</div>
+				<div class="contact-form__group">
+					<label class="contact-form__label" for="email">Email</label>
+					<input class="contact-form__input" type="email" id="email" name="email" placeholder="Entrez votre adresse mail ici..." required />
+				</div>
+				<div class="contact-form__group">
+					<label class="contact-form__label" for="message">Message</label>
+					<textarea class="contact-form__textarea" id="message" name="message" placeholder="Entrez votre message ici..." required></textarea>
+				</div>
+				<button class="contact-form__submit" type="submit">Envoyer</button>
+			</form>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__content">
+			<div class="footer__brand">Génésia</div>
+			<p class="footer__desc">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</p>
+			<p class="footer__info">Pour en savoir plus : <a href="https://mmimontbeliard.com" class="footer__link">MMI Montbéliard</a></p>
+			<p class="footer__mail"><a href="mailto:leonie.pruniaux@edu.univ-fcomte.fr">leonie.pruniaux@edu.univ-fcomte.fr</a></p>
+		</div>
+	</footer>
+</body>
+</html>
