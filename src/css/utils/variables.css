@@ -1,0 +1,23 @@
+/* Couleurs */
+:root {
+  --beige-clair: #f8e7c8;
+  --beige-foncé: #b5a68a;
+  --beige-très-clair: #fff3de;
+  --beige-très-foncé: #9e8b6f;
+  --beige-très-très-clair: #fff7e8;
+  --marron: #302315;
+  --marron-foncé: #241309;
+  --marron-très-foncé: #210f05;
+  --marron-très-très-foncé: #171001;
+}
+/* Typographies */
+:root {
+  --body-1: Baskervville 15px;
+  --body-2: Saira SemiCondensed 15px;
+  --body-3: Saira SemiCondensed Bold 15px;
+  --body-4: Saira SemiCondensed 13px;
+  --body-5: Baskervville Italic 15px;
+  --heading-1: Spectral Bold 35px;
+  --heading-2: Baskervville SC 22px;
+  --heading-3: Quicksand Bold 17.5px;
+}
