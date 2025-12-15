@@ -1,4 +1,3 @@
-
 /* Vendors */
 @import "vendors/normalize.css";
 
@@ -15,3 +14,6 @@
 @import "layout/footer.css";
 
 /* Components */
+@import "components/hero.css";
+@import "components/button.css";
+@import "components/card.css";
