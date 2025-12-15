@@ -3,8 +3,8 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM : Pruniaux
+- PRÉNOM : Léonie
+- GROUPE : A1
 - URL du site :
-- URL FIGMA :
+- URL FIGMA : https://www.figma.com/design/HfvaTmS3sWlFp3TJMQnWY3/Maquette-projet-individuel-S1-%E2%80%94-L%C3%A9onie-PRUNIAUX-MMI1?node-id=704-312
