@@ -35,10 +35,9 @@
 }
 .header__baseline {
   font-family: 'Arial', sans-serif;
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   color: var(--beige-très-clair);
   font-weight: 100;
-  letter-spacing: 0.05em;
   opacity: 0.65;
 }
 .header__lang {
