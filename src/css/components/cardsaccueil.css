@@ -1,0 +1,34 @@
+/* Style carte pour toutes les sections principales */
+.section {
+  background: url('/assets/cards/bullebeigeaccueil.avif') center/cover no-repeat;
+  background-color: transparent;
+  border-radius:16px;
+  box-shadow: 0 4px 24px rgba(36,21,5,0.18);
+  padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+  margin: 2rem 0;
+  max-width: 95vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Bouton "Je découvre l'article" avec fond image */
+.section__btn {
+  background: url('/assets/cards/jedécouvrel\'article.avif') left center no-repeat;
+  background-size: 68px 38px;
+  color: var(--marron-très-foncé);
+  border: none;
+  border-radius: 0.7rem;
+  min-width: 180px;
+  min-height: 38px;
+  font-family: 'Saira SemiCondensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  box-shadow: 0 2px 8px rgba(36,21,5,0.12);
+  padding: 0.5rem 1.2rem 0.5rem 2.5rem;
+  margin-top: 1.2rem;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
