@@ -1,0 +1,33 @@
+/* === HERO ACCUEIL - Génésia, version concise === */
+.hero_image {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0rem 1.2rem;
+  color: var(--beige-très-clair);
+  background-color: var(--marron-très-foncé);
+  background-image: url('/assets/img/FondImageAccueil.avif');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  margin-left: -0.75rem;
+  margin-right: 0;
+  width: calc(100% + 0.75rem);
+}
+@media (min-width: 1024px) {
+  .hero {
+    margin-left: calc(-1 * 0.75rem);
+    width: calc(100% + 0.75rem);
+  }
+}
+.hero__intro {
+  font-size: 1.5rem;
+}
+.hero__title {
+  color: var(--beige-très-clair);
+}
+.header__menu {
+  display: none !important;
+}
