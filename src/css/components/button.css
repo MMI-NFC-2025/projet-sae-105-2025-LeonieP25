@@ -1,17 +1,16 @@
 /* 
-Tout ce qui est : .btn, .btn--light
+Tout ce qui est : .btn, .btn-light
 */
 
 .header__menu-btn {
   width: 79px;
   height: 50px;
-  margin-top: 2.5rem;
+  margin-top: 1.8rem;
   margin-right: 10px;
   background: none;
   border: 1px solid var(--beige-très-clair);
   border-radius: 12px;
   padding: 0;
-  cursor: pointer;
   position: relative;
 }
 .header__menu-btn::before,
@@ -42,4 +41,21 @@ Tout ce qui est : .btn, .btn--light
 }
 .header__menu-btn::after {
   top: 31px;
+}
+.hero__btn-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 45px; /* Décale le bouton vers le haut de 32px du bas */
+  pointer-events: none;
+}
+.hero__btn-discover {
+  background: url('/assets/cards/découvrirplus.avif') center/cover no-repeat;
+  border: none;
+  border-radius: 2rem;
+  min-width: 260px;
+  min-height: 48px;
+  margin-right: 34vw; /* Décale le bouton vers la gauche */
 }
