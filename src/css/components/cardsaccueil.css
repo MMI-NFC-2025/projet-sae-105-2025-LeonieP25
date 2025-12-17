@@ -27,7 +27,15 @@
 }
 
 .section__btn {
-  align-self: flex-start;
-  margin-top: 0.9rem;
-  margin-bottom: 1rem;
+  display: block;
+  width: 450px;
+  height: 30px;
+  background: url('/assets/cards/jedécouvrel\'article.avif') center center/100% 100% no-repeat;
+  border: none;
+  margin-top: 0.7rem;
+  margin-bottom: 0.2rem;
+  margin-left: -1.2rem;
+  padding: 6px 12px;
+  text-indent: -9999px;
+  overflow: hidden;
 }

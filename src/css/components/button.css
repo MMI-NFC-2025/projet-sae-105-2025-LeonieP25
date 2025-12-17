@@ -3,10 +3,10 @@ Tout ce qui est : .btn, .btn-light
 */
 
 .header__menu-btn {
-  width: 80px;
+  width: 95px;
   height: 50px;
-  margin-top: 1.8rem;
-  margin-right: 10px;
+  margin-top: 1.3rem;
+  margin-right: -5px;
   background: none;
   border: 1px solid var(--beige-très-clair);
   border-radius: 12px;
