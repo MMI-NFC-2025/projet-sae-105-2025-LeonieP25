@@ -11,19 +11,24 @@
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
+  position: relative;
 }
 
 .section__title {
-  margin-bottom: 0.1rem;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 0.7rem;
   margin-top: 0;
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-weight: bold;
 }
 
 .section__desc {
-  margin-bottom: 0.7rem;
-  font-size: 1rem;
-  line-height: 1.3;
+  font-family: 'Saira SemiCondensed', sans-serif;
+  color: var(--marron);
+  font-size: 15px;
+  line-height: 1.26;
+  letter-spacing: -0.57px;
+  margin-bottom: 2rem;
 }
 
 .section__btn {
@@ -38,4 +43,24 @@
   padding: 6px 12px;
   text-indent: -9999px;
   overflow: hidden;
+}
+
+.u-highlight {
+  color: var(--marron);
+}
+
+.full-card-link {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: none;
+  border: none;
+  text-indent: -9999px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  display: block;
 }

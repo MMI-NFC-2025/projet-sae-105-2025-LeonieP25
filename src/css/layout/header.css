@@ -36,7 +36,7 @@
 }
 .header__baseline {
   font-family: 'Volkhov', sans-serif;
-  font-size: 0.95rem;
+  font-size: 13px;
   color: var(--beige-très-clair);
   opacity: 0.65;
 }
