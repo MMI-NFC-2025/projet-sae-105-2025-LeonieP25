@@ -1,9 +1,9 @@
 .footer {
   width: 100%;
   background: rgba(245, 235, 220, 0.32); /* beige très translucide */
-  box-shadow: 0 4px 24px rgba(36,21,5,0.10);
-  padding: 2.2rem 1.2rem 1.7rem 1.2rem;
+  padding: 1.5rem 1rem 1.2rem 1rem;
   margin: 0;
+  margin-left: -8px;
   border-radius: 0;
   display: flex;
   flex-direction: column;
@@ -12,29 +12,35 @@
   position: relative;
 }
 
-.footer__brand {
-  font-family: 'Spectral', serif;
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--marron-très-foncé);
-  margin-bottom: 0.5rem;
-  text-align: center;
-  position: relative;
+.footer__lignes {
+  width: 220px;
+  margin: 0 auto 0.2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 2;
 }
 
-.footer__lignes {
-  width: 221px;
-  margin: 0 auto 0.7rem auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer__brand {
+  font-family: 'Spectral', serif;
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: var(--marron-très-foncé);
+  margin-bottom: 0.3rem;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  margin-top: 0.1rem;
 }
 
 .footer__ligne2 {
   width: 100%;
-  max-width: 380px;
-  margin: 1.2rem auto 1.2rem auto;
+  max-width: 300px;
+  margin: 1.2rem auto 0.5rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,42 +48,49 @@
 
 .footer__socials {
   display: flex;
-  gap: 2.2rem;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1.2rem;
+  margin-bottom: -0.5rem;
 }
 .footer__socials img {
-  width: 54px;
-  height: 54px;
-  opacity: 0.29;
-  transition: opacity 0.2s;
-}
-.footer__socials img:hover {
-  opacity: 0.6;
+  width: 58px;
+  height: 58px;
+  opacity: 1;
+  z-index: 4;
+  position: relative;
 }
 
 .footer__desc {
   font-family: 'Tai Heritage Pro', serif;
-  font-size: 1.1rem;
+  font-size: 1.08rem;
   color: var(--beige-très-clair);
   text-align: center;
-  margin-bottom: 1.2rem;
-  margin-top: 1.2rem;
+  margin-bottom: 0.8rem;
+  margin-top: 0.3rem;
+  line-height: 1.18;
 }
 
-.footer__info, .footer__mail {
+.footer__info {
   font-family: 'Tai Heritage Pro', serif;
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: var(--beige-très-clair);
   text-align: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: -1rem;
+}
+
+.footer__mail {
+  font-family: 'Tai Heritage Pro', serif;
+  font-size: 1.05rem;
+  color: var(--beige-très-clair);
+  text-align: center;
+  margin-bottom: 0.08rem;
+  margin-top: 0.08rem;
 }
 
 .footer__link {
-  color: var(--beige-très-clair);
+  color: var(--marron);
   text-decoration: underline;
-  font-weight: bold;
 }
 
 .footer__mail a {
@@ -87,25 +100,25 @@
 
 @media (max-width: 600px) {
   .footer {
-    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    padding: 1rem 0.4rem 1rem 0.4rem;
   }
   .footer__brand {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
   }
   .footer__desc {
-    font-size: 0.95rem;
-  }
-  .footer__info, .footer__mail {
     font-size: 0.9rem;
   }
+  .footer__info, .footer__mail {
+    font-size: 0.8rem;
+  }
   .footer__socials img {
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
   }
   .footer__lignes {
-    width: 140px;
+    width: 110px;
   }
   .footer__ligne2 {
-    max-width: 180px;
+    max-width: 140px;
   }
 }
