@@ -1,0 +1,54 @@
+/* Image du microscope positionnée à droite de Nettie */
+.hero__img-microscope {
+  position: absolute;
+  right: 50px; /* Décale un peu plus à gauche */
+  top: 155px;   /* Descend un peu l'image */
+  width: 38vw;
+  max-width: 150px;
+  z-index: 3;
+}
+
+/* Section hero spécifique à la page Nettie Stevens */
+.hero-nettie {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 320px;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  background: none;
+}
+
+/* Portrait principal de Nettie Stevens */
+.hero__img {
+  width: 60vw;
+  max-width: 230px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  z-index: 2;
+  position: relative;
+  left: -60px; /* Décale un peu plus à gauche */
+}
+
+/* Responsive : adapte la taille et la position sur écran large */
+@media (min-width: 600px) {
+  .hero-nettie {
+    min-height: 400px;
+    padding-top: 3.5rem;
+  }
+  .hero__img {
+    max-width: 260px;
+    left: -70px;
+  }
+  .hero__img-microscope {
+    right: 120px;
+    top: 40px;
+    max-width: 150px;
+  }
+  .hero__title {
+    font-size: 1.7rem;
+  }
+}
