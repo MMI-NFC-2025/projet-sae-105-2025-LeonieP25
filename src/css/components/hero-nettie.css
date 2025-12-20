@@ -1,3 +1,44 @@
+/* Appliquer la police Baskervville SC à tous les titres de section */
+.main--dark .section__title {
+  font-family: 'Baskervville SC', serif !important;
+  font-variant: small-caps;
+  font-weight: 400 !important;
+}
+/* Forcer le texte des titres et descriptions de section en blanc sur la page Nettie Stevens */
+.main--dark .section__title,
+.main--dark .section__desc {
+  color: #ffffff;
+}
+.main--dark .section {
+  background: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* Bannière titre/dates sous l'image de Nettie et du microscope */
+.hero__banner {
+  width: 100%;
+  background: var(--beige-très-foncé);
+  box-shadow: 0 15px 2px rgba(0,0,0,0.10);
+  padding: 0.9rem 0 0.9rem 0;
+  margin-top: -1rem;
+  text-align: center;
+}
+.hero__title {
+  font-family: 'Volkhov', serif;
+  font-size: 22px;
+  color: var(--marron-très-foncé);
+  font-weight: 540;
+  margin: 0;
+}
+.hero__dates {
+  font-family: 'Saira SemiCondensed', sans-serif;
+  font-size: 12px;
+  color: var(--marron-très-foncé);
+  font-weight: 400;
+}
+
 /* Image du microscope positionnée à droite de Nettie */
 .hero__img-microscope {
   position: absolute;
@@ -31,6 +72,12 @@
   z-index: 2;
   position: relative;
   left: -60px; /* Décale un peu plus à gauche */
+}
+
+/* Fond spécifique uniquement pour la page Nettie Stevens */
+.main--dark.hero-nettie-bg {
+  background: url('/assets/img/FondDePage.avif') repeat center center fixed !important;
+  background-size: 100% !important;
 }
 
 /* Responsive : adapte la taille et la position sur écran large */
