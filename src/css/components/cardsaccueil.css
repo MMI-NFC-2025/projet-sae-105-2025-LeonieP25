@@ -33,7 +33,7 @@
   line-height: 1.26;
   letter-spacing: -0.57px;
   margin-top: 0rem;
-  margin-bottom: 0rem;
+  margin-bottom: 2.5rem;
 }
 
 .section__btn {
@@ -68,4 +68,17 @@
   margin: 0;
   opacity: 0;
   display: block;
+}
+
+.section.section.section--bio .section__desc,
+.section.section.section--career .section__desc,
+.section.section.section--discoveries .section__desc
+ {
+  font-family: 'Saira SemiCondensed', sans-serif;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.26;
+  letter-spacing: -0.57px;
+  margin-top: 0rem;
+  margin-bottom: -0.5rem;
 }
