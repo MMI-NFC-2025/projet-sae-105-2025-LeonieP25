@@ -1,0 +1,17 @@
+/* Article suivant simple et fidèle à la capture */
+a.article-nav__next {
+  color: var(--beige-clair); font-family: 'Saira SemiCondensed', sans-serif; 
+  font-size: 0.8rem; 
+  font-weight: 300; 
+  text-decoration: underline; 
+  text-underline-offset: 1px; 
+  border: none; 
+  background: none; 
+  position: absolute;
+  right: 2.5rem;
+}
+/* S'assurer que le conteneur nav est positionné relativement pour le positionnement absolu du lien */
+.article-nav {
+  position: relative;
+  min-height: 2.5rem;
+}
