@@ -133,13 +133,3 @@
     font-size: 1.7rem;
   }
 }
-
-@media (max-width: 599px) {
-  .hero__title {
-    font-size: 18px !important;
-    white-space: normal;
-    word-break: break-word;
-    max-width: 95vw;
-    box-sizing: border-box;
-  }
-}
