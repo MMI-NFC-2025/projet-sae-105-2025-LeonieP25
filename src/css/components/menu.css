@@ -1,0 +1,66 @@
+/* Overlay menu avec fond fondpagemenu.avif */
+#menu-overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 9999;
+	background: url('/assets/img/fondpagemenu.avif') center/cover no-repeat;
+	display: none;
+	overflow-y: auto;
+	padding: 0;
+}
+#menu-overlay__links {
+	display: flex;
+	flex-direction: column;
+	gap: 2.2rem;
+	margin-top: 3.5rem;
+	margin-bottom: 2.5rem;
+	align-items: flex-start;
+	padding-left: 2.2rem;
+}
+
+#menu-overlay__links a {
+	color: #fff;
+	font-family: 'Spectral', serif;
+	font-size: 1.15rem;
+	font-weight: 600;
+	text-decoration: none;
+	text-shadow: 0 2px 8px #000a;
+	transition: color 0.2s;
+}
+#menu-overlay__links a:hover {
+	color: #e6d3b3;
+}
+
+#menu-overlay__btns {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.7rem 1.2rem;
+	justify-content: center;
+	margin-bottom: 2.5rem;
+}
+
+#menu-overlay__btns a {
+	background: #e6d3b3cc;
+	color: #3a2a1a;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	border-radius: 0.4rem;
+	padding: 0.5rem 1.2rem;
+	text-decoration: none;
+	box-shadow: 0 2px 8px #0003;
+	transition: background 0.2s, color 0.2s;
+	border: none;
+	display: inline-block;
+}
+#menu-overlay__btns a:hover {
+	background: #fff6e0;
+	color: #7a5c3a;
+}
+#menu-overlay.active {
+	display: block;
+}
+
+#menu-overlay:target {
+  display: block;
+}
