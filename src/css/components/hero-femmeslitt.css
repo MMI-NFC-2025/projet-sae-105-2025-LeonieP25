@@ -1,0 +1,77 @@
+/* Fond spécifique uniquement pour la page Femmes et littérature scientifique */
+.main--dark.hero-femmeslitt-bg {
+  position: relative;
+  z-index: 0;
+}
+.main--dark.hero-femmeslitt-bg::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: -1;
+  background: url('/assets/img/FondPourFemmesLittérature.avif') repeat center top fixed;
+  background-size: cover;
+  pointer-events: none;
+}
+
+.hero-femmeslitt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4.5rem;
+  margin-bottom: 2.2rem;
+}
+.hero-femmeslitt__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.hero-femmeslitt__bar {
+  height: 2px;
+  background: var(--beige-clair);
+  flex: 1 1 60px;
+  max-width: 70px;
+  min-width: 20px;
+}
+.hero-femmeslitt__bar--left {
+  margin-right: 0.7rem;
+}
+.hero-femmeslitt__bar--right {
+  margin-left: 0.7rem;
+}
+.hero-femmeslitt__dot {
+  width: 10px;
+  height: 10px;
+  background: var(--beige-clair);
+  border-radius: 50%;
+  margin: 0 0.2rem;
+}
+.hero-femmeslitt__title {
+  color: var(--beige-clair);
+  font-family: 'Volkhov', serif;
+  font-size: 23px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.01em;
+}
+.hero-femmeslitt__underline {
+  width: 90%;
+  max-width: 260px;
+  height: 2px;
+  background: var(--beige-clair);
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .hero-femmeslitt__title {
+    font-size: 18px;
+  }
+  .hero-femmeslitt__bar {
+    max-width: 60px;
+  }
+  .hero-femmeslitt__underline {
+    max-width: 500px;
+  }
+}

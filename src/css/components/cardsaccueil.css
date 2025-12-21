@@ -1,9 +1,8 @@
 /* Style carte pour toutes les sections principales */
 .section {
-  background-color: var(--beige-très-clair);
-  opacity: 0.6;
-  border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(36,21,5,0.18);
+  background: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
   padding: 2.2rem 1.2rem 1.7rem 1.2rem;
   margin: 2.2rem 0;
   margin-left: 20px;
@@ -73,10 +72,18 @@
 .section.section.section--discoveries .section__desc
  {
   font-family: 'Saira SemiCondensed', sans-serif;
-  color: #fff;
+  color: #e8e1d3;
   font-size: 15px;
   line-height: 1.26;
   letter-spacing: -0.57px;
   margin-top: 0rem;
   margin-bottom: -0.5rem;
+}
+
+/* Styles beige uniquement pour index.html */
+.beige-cards .section {
+  background: var(--beige-clair, #F5F5DC) !important;
+  opacity: 0.6;
+  border-radius: 18px !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08) !important;
 }
