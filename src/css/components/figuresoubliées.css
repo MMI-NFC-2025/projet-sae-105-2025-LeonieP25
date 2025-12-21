@@ -1,0 +1,97 @@
+.matilda-bulle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid var(--marron);
+  box-shadow: 20px 1px 80px rgba(0, 0, 0, 0.13);
+  margin: 0.5em 0 0.5em -0.5em;
+  min-height: 110px;
+  max-height: 210px;
+  overflow: hidden;
+  max-width: 430px;
+  width: 100%;
+}
+.matilda-bulle::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #e0d6c2;
+  opacity: 0.3;
+  border-radius: 10px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.matilda-bulle__texte {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 1.1em;
+  order: 1;
+  position: relative;
+  z-index: 1;
+}
+.matilda-bulle__titre {
+  font-family: 'Baskervville SC', serif;
+  font-size: 1.4em;
+  color: #3c2c1a;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  display: block;
+  letter-spacing: 0.01em;
+}
+.matilda-bulle__desc {
+  font-family: 'Saira SemiCondensed', sans-serif;
+  font-size: 1.05em;
+  color: #fff;
+  line-height: 1.35;
+  display: block;
+}
+.matilda-bulle__img {
+  width: 141px !important;
+  height: 133px !important;
+  min-width: 151px;
+  min-height: 143px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-left: 1.2em;
+  display: block;
+  position: absolute;
+  top: 2;
+  right: 0;
+  order: 2;
+  flex-shrink: 0;
+  z-index: 0;
+}
+@media (max-width: 600px) {
+  .matilda-bulle {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1em 0.5em;
+    min-height: 90px;
+  }
+
+  .matilda-bulle__texte {
+    max-width: 100%;
+    padding-right: 0;
+    order: unset;
+  }
+  .matilda-bulle__img {
+    margin: 1em auto 0 auto;
+    width: 90px;
+    height: 90px;
+    align-self: center;
+    order: unset;
+    margin-right: 0;
+    margin-top: 0;
+  }
+}
+
+.section {
+  margin-top: -4em;
+  margin-bottom: -4em;
+}
