@@ -59,3 +59,31 @@ Tout ce qui est : .btn, .btn-light
   min-height: 48px;
   margin-right: 34vw; /* Décale le bouton vers la gauche */
 }
+
+#menu-overlay__btns {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem 1.5rem;
+	max-width: 310px;
+	margin-left: 23px;
+	margin-right: auto;
+	margin-top: 8rem;
+}
+
+#menu-overlay__btns a {
+	background: color-mix(in srgb, var(--beige-clair) 80%, transparent);
+	opacity: 80%;
+	color: var(--marron);
+	font-family: 'Volkhov', serif;
+	font-size: 1rem;
+	font-weight: 600;
+	border-radius: 0.4rem;
+	padding: 0.9rem 1.2rem;
+	text-decoration: none;
+	box-shadow: 0 2px 8px #0003;
+	border: none;
+	display: inline-block;
+	min-width: 20px;
+	margin: -3px;
+	text-align: 0;
+}
