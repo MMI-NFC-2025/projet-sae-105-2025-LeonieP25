@@ -89,28 +89,28 @@
   white-space: nowrap;
   border-bottom-width: 2px;
   border-bottom-color: var(--marron-très-foncé);
-  width: 92px;
+  width: 107px;
 }
 
 .section--legacy .section__title {
   white-space: nowrap;
   border-bottom-width: 2px;
   border-bottom-color: var(--marron-très-foncé);
-  width: 178px;
+  width: 205px;
 }
 
 .section--discoveries .section__title {
   white-space: nowrap;
   border-bottom-width: 2px;
   border-bottom-color: var(--marron-très-foncé);
-  width: 105px;
+  width: 123px;
 }
 
 .section--career .section__title {
   white-space: nowrap;
   border-bottom-width: 2px;
   border-bottom-color: var(--marron-très-foncé);
-  width: 80px;
+  width: 90px;
 }
 
 
