@@ -85,6 +85,35 @@
   background-size: 100% !important;
 }
 
+.section--bio .section__title {
+  white-space: nowrap;
+  border-bottom-width: 2px;
+  border-bottom-color: var(--marron-très-foncé);
+  width: 92px;
+}
+
+.section--legacy .section__title {
+  white-space: nowrap;
+  border-bottom-width: 2px;
+  border-bottom-color: var(--marron-très-foncé);
+  width: 178px;
+}
+
+.section--discoveries .section__title {
+  white-space: nowrap;
+  border-bottom-width: 2px;
+  border-bottom-color: var(--marron-très-foncé);
+  width: 105px;
+}
+
+.section--career .section__title {
+  white-space: nowrap;
+  border-bottom-width: 2px;
+  border-bottom-color: var(--marron-très-foncé);
+  width: 80px;
+}
+
+
 /* Responsive : adapte la taille et la position sur écran large */
 @media (min-width: 600px) {
   .hero-nettie {

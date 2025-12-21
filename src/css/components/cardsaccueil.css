@@ -18,7 +18,8 @@
   font-family: 'Quicksand', sans-serif;
   margin-bottom: 0;
   margin-top: 0;
-  font-size: 1.55rem;
+  font-size: 19px;
+  margin-bottom: 0.25em;
   font-weight: bold;
   border-bottom: 2px solid var(--marron-très-foncé);
   width: 120px;
