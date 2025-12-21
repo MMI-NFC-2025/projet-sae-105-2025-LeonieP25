@@ -1,10 +1,15 @@
+/* Réduit l'espacement entre les sections principales */
+.main--dark .section {
+  margin-top: -1.2rem;
+  margin-bottom: -1.3rem;
+}
 /* Appliquer la police Baskervville SC à tous les titres de section */
 .main--dark .section__title {
   font-family: 'Baskervville SC', serif !important;
   font-variant: small-caps;
   font-weight: 400 !important;
 }
-/* Forcer le texte des titres et descriptions de section en blanc sur la page Nettie Stevens */
+
 .main--dark .section__title,
 .main--dark .section__desc {
   color: #ffffff;
