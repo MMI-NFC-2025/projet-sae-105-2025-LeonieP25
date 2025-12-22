@@ -23,6 +23,11 @@
   padding-bottom: 0.15em;
 }
 
+/* Cible uniquement le titre "Nettie Stevens, pionnière des sciences" de la page d'accueil */
+#nettie-stevens .section__title.section__title--no-underline {
+  font-size: 18px !important;
+}
+
 .section__desc {
   font-family: 'Saira SemiCondensed', sans-serif;
   color: var(--marron);

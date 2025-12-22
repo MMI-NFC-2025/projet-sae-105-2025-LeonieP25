@@ -73,7 +73,6 @@
   max-width: 230px;
   height: auto;
   border-radius: 4px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
   z-index: 2;
   position: relative;
   left: -60px; /* Décale un peu plus à gauche */
