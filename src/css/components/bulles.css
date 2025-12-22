@@ -1,0 +1,81 @@
+/* Bulle citation style */
+.bulle-citation {
+  border-radius: 8px;
+  padding: 1.2em 1.5em 1em 1.5em;
+  margin: 0.2em 0 0.2em 0;
+  max-width: 600px;
+  color: #3c2c1a;
+  font-family: 'Baskervville', serif;
+  font-size: 1.18em;
+  position: relative;
+}
+.bulle-citation::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #e0d6c2;
+  opacity: 0.6;
+  border-radius: 8px;
+  z-index: 0;
+  pointer-events: none;
+  display: block;
+}
+.bulle-citation > *, .bulle-ref > * {
+  position: relative;
+  z-index: 1;
+}
+.bulle-citation__quote {
+  display: block;
+  font-style: italic;
+  margin-bottom: 0.7em;
+}
+.bulle-citation__auteur {
+  border-top: 2px solid #3c2c1a;
+  padding-top: 0.3em;
+  font-size: 0.98em;
+  font-family: 'Saira SemiCondensed', sans-serif;
+  color: #3c2c1a;
+}
+
+/* Bulle référence style */
+.bulle-ref {
+  border-radius: 8px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.13);
+  border: 1px solid #1e1501;
+  padding: 1.2em 1.5em 1em 1.5em;
+  margin: 1.2em 0 1.2em 0;
+  max-width: 600px;
+  font-size: 1.08em;
+  position: relative;
+  background: #3c2c1a;
+  opacity: 0.8;
+}
+
+.bulle-ref::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.3;
+  border-radius: 8px;
+  z-index: 0;
+  pointer-events: none;
+  display: block;
+}
+.bulle-ref__titre {
+  color: #f8e7c8;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.18em;
+  margin-bottom: 0.3em;
+  opacity: 0.5;
+}
+.bulle-ref__desc {
+  margin-bottom: 0.5em;
+  color: #f8e7c8;
+  opacity: 0.5;
+}
+.bulle-ref__source {
+  color: #f8e7c8;
+  font-size: 0.98em;
+  opacity: 0.5;
+}
+

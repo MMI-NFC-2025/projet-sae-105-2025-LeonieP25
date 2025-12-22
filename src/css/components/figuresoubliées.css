@@ -34,6 +34,7 @@
   order: 1;
   position: relative;
   z-index: 1;
+  opacity: 0.5;
 }
 .matilda-bulle__titre {
   font-family: 'Baskervville SC', serif;
@@ -47,7 +48,7 @@
 .matilda-bulle__desc {
   font-family: 'Saira SemiCondensed', sans-serif;
   font-size: 1.05em;
-  color: #fff;
+  color: var(--beige);
   line-height: 1.35;
   display: block;
 }
