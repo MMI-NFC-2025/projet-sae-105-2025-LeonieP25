@@ -24,12 +24,48 @@
   flex: 0 0 200px;
   max-width: 200px;
   min-width: 200px;
-  background: var(--beige, #e5d3b3);
-  border-radius: 12px;
-  margin: 0;
+  background: transparent;
   position: relative;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 10px;
   min-height: 350px;
   max-height: 30px;
+  border: 1px solid var(--marron);
+}
+
+.carousel-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--marron-clair);
+  opacity: 0.4;
+  border-radius: 10px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.carousel-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.carousel-card > *:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.carousel-card__title {
+  text-align: center;
+}
+
+.carousel-card__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0;
+  width: 70px;
+  height: 90px;
+  object-fit: cover;
 }
 
 /* Responsive: adapte la largeur sur mobile */
