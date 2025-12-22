@@ -79,3 +79,18 @@
   opacity: 0.5;
 }
 
+.bulle-desc {
+  background: var(--beige-clair);
+  opacity: 0.8;
+  border-radius: 18px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  padding: 0em 1em;
+  margin: 1.7em auto 2em auto;
+  text-align: center;
+  font-family: 'Saira SemiCondensed', serif;
+  font-size: 1.15em;
+  font-style: italic;
+  color: var(--marron-très-foncé);
+  max-width: 370px;
+  width: 90%;
+}

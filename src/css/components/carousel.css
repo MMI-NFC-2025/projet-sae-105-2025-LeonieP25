@@ -1,0 +1,41 @@
+.section__carousel_titre {
+  color: var(--beige-clair);
+  font-style: italic;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.section__carousel {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 2rem;
+  padding: 2rem 0;
+  margin-bottom: 2.5rem; /* Ajout d'une marge en bas */
+  /* Masque la scrollbar visuelle */
+  scrollbar-width: none;
+}
+
+.section__carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-card {
+  flex: 0 0 200px;
+  max-width: 200px;
+  min-width: 200px;
+  background: var(--beige, #e5d3b3);
+  border-radius: 12px;
+  margin: 0;
+  position: relative;
+  min-height: 350px;
+  max-height: 30px;
+}
+
+/* Responsive: adapte la largeur sur mobile */
+@media (max-width: 600px) {
+  .carousel-card {
+    min-width: 50vw;
+    max-width: 50vw;
+  }
+}
