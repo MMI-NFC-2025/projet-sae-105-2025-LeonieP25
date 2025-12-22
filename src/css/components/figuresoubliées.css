@@ -31,10 +31,10 @@
   flex-direction: column;
   justify-content: center;
   padding-right: 1.1em;
+  opacity: 1;
   order: 1;
   position: relative;
   z-index: 1;
-  opacity: 0.5;
 }
 .matilda-bulle__titre {
   font-family: 'Baskervville SC', serif;
@@ -44,6 +44,7 @@
   margin-bottom: 0.3em;
   display: block;
   letter-spacing: 0.01em;
+  opacity: 100% !important;
 }
 .matilda-bulle__desc {
   font-family: 'Saira SemiCondensed', sans-serif;
