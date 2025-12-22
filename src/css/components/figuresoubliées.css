@@ -39,7 +39,7 @@
 .matilda-bulle__titre {
   font-family: 'Baskervville SC', serif;
   font-size: 1.4em;
-  color: #3c2c1a;
+  color: var(--marron);
   font-weight: bold;
   margin-bottom: 0.3em;
   display: block;
