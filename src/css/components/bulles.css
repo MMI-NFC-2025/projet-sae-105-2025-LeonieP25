@@ -4,7 +4,7 @@
   padding: 1.2em 1.5em 1em 1.5em;
   margin: 0.2em 0 0.2em 0;
   max-width: 600px;
-  color: #3c2c1a;
+  color: var(--marron-bulle);
   font-family: 'Baskervville', serif;
   font-size: 1.18em;
   position: relative;
@@ -13,7 +13,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: #e0d6c2;
+  background: var(--beige-bulle);
   opacity: 0.6;
   border-radius: 8px;
   z-index: 0;
@@ -30,24 +30,24 @@
   margin-bottom: 0.7em;
 }
 .bulle-citation__auteur {
-  border-top: 2px solid #3c2c1a;
+  border-top: 2px solid var(--marron-bulle);
   padding-top: 0.3em;
   font-size: 0.98em;
   font-family: 'Saira SemiCondensed', sans-serif;
-  color: #3c2c1a;
+  color: var(--marron-bulle);
 }
 
 /* Bulle référence style */
 .bulle-ref {
   border-radius: 8px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.13);
-  border: 1px solid #1e1501;
+  border: 1px solid var(--marron-bulle-fonce);
   padding: 1.2em 1.5em 1em 1.5em;
   margin: 1.2em 0 1.2em 0;
   max-width: 600px;
   font-size: 1.08em;
   position: relative;
-  background: #3c2c1a;
+  background: var(--marron-bulle);
   opacity: 0.8;
 }
 
@@ -62,7 +62,7 @@
   display: block;
 }
 .bulle-ref__titre {
-  color: #f8e7c8;
+  color: var(--beige-clair);
   font-family: 'Quicksand', sans-serif;
   font-size: 1.18em;
   margin-bottom: 0.3em;
@@ -70,11 +70,11 @@
 }
 .bulle-ref__desc {
   margin-bottom: 0.5em;
-  color: #f8e7c8;
+  color: var(--beige-clair);
   opacity: 0.5;
 }
 .bulle-ref__source {
-  color: #f8e7c8;
+  color: var(--beige-clair);
   font-size: 0.98em;
   opacity: 0.5;
 }

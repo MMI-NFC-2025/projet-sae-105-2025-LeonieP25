@@ -92,11 +92,11 @@
   font-family: 'Baskervville SC', serif !important;
   font-variant: small-caps;
   font-weight: 400 !important;
-  color: #e8e1d3;
+  color: var(--beige-section);
 }
 
 .main--dark .section__desc {
-  color: #e8e1d3;
+  color: var(--beige-section);
 }
 
 .main--dark .section {
