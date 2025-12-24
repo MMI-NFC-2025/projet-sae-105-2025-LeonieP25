@@ -1,3 +1,11 @@
+/* Sous-titre de la théorie : italique, Baskervville, beige */
+.hero__subtitle {
+  font-style: italic;
+  font-family: 'Baskervville', serif;
+  color: var(--beige, #f5ecd7);
+  margin-left: 1.2em;
+  margin-top: 1.5em;
+}
 html, body {
   margin: 0;
   padding: 0;
@@ -6,3 +14,28 @@ html, body {
     html, body {
       overflow-x: hidden !important;
     }
+
+/* Appliquer la police Baskervville SC à tous les titres de section */
+.main--dark .section__title {
+  font-family: 'Baskervville SC', serif !important;
+  font-variant: small-caps;
+  font-weight: 400 !important;
+}
+
+.main--dark .section__title,
+.main--dark .section__desc {
+  color: #e8e1d3;
+}
+.main--dark .section {
+  background: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Réduit l'espacement entre les sections principales */
+.main--dark .section {
+  margin-top: -1.2rem;
+  margin-bottom: -1.3rem;
+}

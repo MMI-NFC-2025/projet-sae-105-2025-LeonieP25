@@ -1,0 +1,15 @@
+/* Fond spécifique pour la page théorie */
+body.page-theorie {
+  background: url('/assets/img/FondDePageTheorie.avif') fixed !important;
+  background-size: 100% !important;
+}
+
+/* Fond de page sur tout le body, y compris sous le footer */
+body {
+  background: url('/assets/img/FondPage.avif');
+  background-size: 100%;
+}
+
+.main {
+  background: none;
+}

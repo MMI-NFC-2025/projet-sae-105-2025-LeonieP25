@@ -1,26 +1,3 @@
-/* Réduit l'espacement entre les sections principales */
-.main--dark .section {
-  margin-top: -1.2rem;
-  margin-bottom: -1.3rem;
-}
-/* Appliquer la police Baskervville SC à tous les titres de section */
-.main--dark .section__title {
-  font-family: 'Baskervville SC', serif !important;
-  font-variant: small-caps;
-  font-weight: 400 !important;
-}
-
-.main--dark .section__title,
-.main--dark .section__desc {
-  color: #e8e1d3;
-}
-.main--dark .section {
-  background: none !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  padding-left: 0;
-  padding-right: 0;
-}
 /* Bannière titre/dates sous l'image de Nettie et du microscope */
 .hero__banner {
   width: 100%;
