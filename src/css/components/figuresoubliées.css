@@ -32,6 +32,7 @@
   padding-right: 1.1em;
   opacity: 1;
   order: 1;
+  color: var(--beige-clair);
   position: relative;
   z-index: 1;
 }

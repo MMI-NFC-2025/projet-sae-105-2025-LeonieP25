@@ -1,3 +1,12 @@
+.hero-femmeslitt__subtitle {
+  color: var(--beige-clair);
+  font-style: italic;
+  font-family: 'Baskervville', serif;
+  margin-left: 1.2em;
+  margin-top: 2em;
+  max-width: 600px;
+}
+
 /* Fond spécifique uniquement pour la page Theorie EN */
 .hero-theorie-bg.main--dark,
 .main--dark.hero-theorie-bg,
@@ -61,7 +70,7 @@ main[class*="hero-theorie-bg"]::before {
 .hero-theorie__title {
   color: var(--beige-clair);
   font-family: 'Volkhov', serif;
-  font-size: 23px;
+  font-size: 21px;
   font-weight: 400;
   text-align: center;
   margin: 0 0 0.5rem 0;
@@ -73,20 +82,6 @@ main[class*="hero-theorie-bg"]::before {
   height: 2px;
   background: var(--beige-clair);
   margin: 0 auto;
-}
-.bulle-desc {
-  background: var(--beige-clair);
-  opacity: 0.8;
-  border-radius: 18px;
-  padding: 0em 1em;
-  margin: 1.7em auto 2em auto;
-  text-align: center;
-  font-family: 'Saira SemiCondensed', serif;
-  font-size: 1.15em;
-  font-style: italic;
-  color: var(--marron-très-foncé);
-  max-width: 370px;
-  width: 90%;
 }
 
 @media (min-width: 600px) {

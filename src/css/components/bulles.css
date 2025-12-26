@@ -74,7 +74,7 @@
   opacity: 0.5;
 }
 .bulle-ref__source {
-  color: var(--beige-clair);
+  color: var(--beige-bulle);
   font-size: 0.98em;
   opacity: 0.5;
 }
@@ -90,7 +90,7 @@
   font-family: 'Saira SemiCondensed', serif;
   font-size: 1.15em;
   font-style: italic;
-  color: var(--marron-très-foncé);
+  color: var(--marron-bulle-fonce) !important;
   max-width: 370px;
   width: 90%;
 }

@@ -1,0 +1,54 @@
+.section--articles .section__title {
+  font-size: 1.8em;
+}
+.section.section.section--illustrations {
+  margin-top: -50px;
+}
+.schema-associe-observation__img {
+  display: block;
+  width: 100%;
+  max-width: 840px;
+  margin: auto;
+  border-radius: 8px;
+  margin-top: 1.7em;
+}
+
+.schema-associe__img {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  margin: auto;
+  border-radius: 8px;
+  margin-top: 0.9em;
+}
+
+.schema-associe__caption {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.1em;
+  color: #e7dbc7;
+  font-family: 'Baskervville', serif;
+  font-size: 1.1em;
+}
+
+.schema-associe__observation {
+  background: var(--marron-bulle-fonce);
+  color: #e8e1d3;
+  font-family: 'Baskervville', serif;
+  font-size: 0.9em;
+  border-radius: 8px;
+  margin-top: 0.3em;
+  padding: 0.9em 1em 0.7em 1em;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  max-width: 305px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.schema-associe__observation-detail {
+  color: #e8e1d3;
+  font-family: 'Baskervville', serif;
+  font-size: 1.19em;
+}

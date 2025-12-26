@@ -1,3 +1,10 @@
+.section.section.section--matilda {
+  margin-top: -4.5em;
+}
+.section.section--matilda .section__title,
+.section.section--matilda .section__divider {
+  margin-top: 1.5em;
+}
 /* Fond spécifique uniquement pour la page Femmes et littérature scientifique */
 .main--dark.hero-femmeslitt-bg {
   position: relative;
@@ -74,7 +81,7 @@
   font-family: 'Saira SemiCondensed', serif;
   font-size: 1.15em;
   font-style: italic;
-  color: var(--marron-très-foncé);
+  color: var(--beige-clair) !important;
   max-width: 370px;
   width: 90%;
 }
