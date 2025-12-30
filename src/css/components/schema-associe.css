@@ -32,7 +32,7 @@
 }
 
 .schema-associe__observation {
-  background: var(--marron-bulle-fonce);
+  background: var(--marron-bulle);
   color: #e8e1d3;
   font-family: 'Baskervville', serif;
   font-size: 0.9em;

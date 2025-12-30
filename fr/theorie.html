@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="/src/css/style.css" />
   <script type="module" src="/src/js/script.js"></script>
 </head>
-<body>
+  <body data-page="theorie">
   <header class="header">
     <div class="header__brand">
       <a href="index.html">
@@ -63,17 +63,39 @@
     <section class="section section--articles">
       <h2 class="section__title">Articles scientifiques complémentaires</h2>
       <div class="section__divider"></div>
-      <ul class="articles u-list-unstyled">
-        <li class="articles__item"><span class="articles__ref">Stevens, N. M. (1905)</span> — Études sur la spermatogenèse, notamment sur le « chromosome accessoire ». Carnegie Institution of Washington, Publication n° 36. <a href="#">Cliquez pour lire l’article</a></li>
-        <li class="articles__item"><span class="articles__ref">Wilson, E. B. (1905)</span> — Les chromosomes et la détermination du sexe. Science, 22(564), 500–502. <a href="#">Cliquez pour lire l’article</a></li>
-        <li class="articles__item"><span class="articles__ref">Morgan, T. H. (1910)</span> — Hérédité liée au sexe chez la drosophile. Science, 32(812), 120–122. <a href="#">Cliquez pour lire l’article</a></li>
-        <li class="articles__item"><span class="articles__ref">Brush, S. G. (1978)</span> — Nettie M. Stevens et la découverte de la détermination sexuelle par les chromosomes. Isis, 69(1), 163–172. <a href="#">Cliquez pour lire l’article</a></li>
-      </ul>
+      <div class="cards-scientifiques">
+        <div class="card-scientifique" style="position:relative;">
+          <a href="http://old.esp.org/foundations/genetics/classical/holdings/s/nms-05-spermatogenesis-1.pdf" target="_blank" class="card-scientifique-link" aria-label="Lire l'article Stevens"></a>
+          <div class="card-scientifique__title">Stevens, N. M. (1905)</div>
+          <div class="card-scientifique__desc">Études sur la spermatogenèse, notamment sur le « chromosome accessoire ».<br><br>Carnegie Institution of Washington, Publication n° 36.</div>
+          <img class="card-scientifique__btnimg" src="/assets/cards/cliquezpourlirearticle.avif" alt="Cliquez pour lire l'article">
+        </div>
+        <div class="card-scientifique" style="position:relative;">
+          <a href="http://www.esp.org/foundations/genetics/classical/ebw-05.pdf" target="_blank" class="card-scientifique-link" aria-label="Lire l'article Wilson"></a>
+          <div class="card-scientifique__title">Wilson, E. B. (1905)</div>
+          <div class="card-scientifique__desc">Les chromosomes et la détermination du sexe.<br>Science, 22(564), 500–502.</div>
+          <img class="card-scientifique__btnimg" src="/assets/cards/cliquezpourlirearticle.avif" alt="Cliquez pour lire l'article">
+        </div>
+        <div class="card-scientifique" style="position:relative;">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17759620/" target="_blank" class="card-scientifique-link" aria-label="Lire l'article Morgan"></a>
+          <div class="card-scientifique__title">Morgan, T. H. (1910)</div>
+          <div class="card-scientifique__desc">Hérédité liée au sexe chez la drosophile.<br>Science, 32(812), 120–122.</div>
+          <img class="card-scientifique__btnimg" src="/assets/cards/cliquezpourlirearticle.avif" alt="Cliquez pour lire l'article">
+        </div>
+        <div class="card-scientifique" style="position:relative;">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/389882/" target="_blank" class="card-scientifique-link" aria-label="Lire l'article Brush"></a>
+          <div class="card-scientifique__title">Brush, S. G. (1978)</div>
+          <div class="card-scientifique__desc">Nettie M. Stevens et la découverte de la détermination sexuelle par les chromosomes.<br>Isis, 69(1), 163–172.</div>
+          <img class="card-scientifique__btnimg" src="/assets/cards/cliquezpourlirearticle.avif" alt="Cliquez pour lire l'article">
+        </div>
+      </div>
     </section>
 
     <nav class="article-nav">
-      <a class="article-nav__prev" href="femmes-littérature-sci.html">← Article précédent <span class="article-nav__arrow"></span></a>
-      <a class="article-nav__next" href="objet.html">Article suivant <span class="article-nav__arrow">→</span></a>
+      <nav class="article-nav">
+        <a class="article-nav__prev" href="femmes-littérature-sci.html">← Article précédent <span class="article-nav__arrow"></span></a>
+        <a class="article-nav__next" href="objet.html">Article suivant <span class="article-nav__arrow">→</span></a>
+      </nav>
     </nav>
   </main>
 

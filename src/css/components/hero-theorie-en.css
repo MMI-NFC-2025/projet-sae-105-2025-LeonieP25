@@ -7,7 +7,7 @@
   max-width: 600px;
 }
 
-/* Fond spécifique uniquement pour la page Theorie EN */
+/* Fond spécifique uniquement pour la page Theorie FR */
 .hero-theorie-bg.main--dark,
 .main--dark.hero-theorie-bg,
 main.hero-theorie-bg,
@@ -30,7 +30,7 @@ main[class*="hero-theorie-bg"]::before {
   background-size: cover;
   pointer-events: none;
 }
-/* Styles spécifiques pour le hero de la page theorie.html (EN) */
+/* Styles spécifiques pour le hero de la page theorie.html (FR) */
 
 .hero-theorie {
   display: flex;

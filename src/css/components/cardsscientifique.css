@@ -1,0 +1,82 @@
+/* Lien invisible sur toute la carte scientifique */
+.card-scientifique-link {
+	position: absolute;
+	inset: 0;
+	z-index: 2;
+	text-indent: -9999px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	pointer-events: auto;
+}
+[data-page='theorie'] nav.article-nav {
+	margin-top: 2.5em;
+}
+/* Cartes pour Articles scientifiques complémentaires */
+.cards-scientifiques {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2.2em;
+	justify-content: center;
+	margin-top: 1.5em;
+}
+
+.card-scientifique {
+	background: var(--beige-très-foncé);
+	border-radius: 16px;
+	box-shadow: 0 4px 16px #0005;
+	border: 1px solid var(--marron);
+	padding: 1.1em 1.2em 1.5em 1.2em;
+	max-width: 300px;
+	min-width: 240px;
+	flex: 1 1 260px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-family: 'Saira SemiCondensed', 'Arial', sans-serif;
+	font-size: 1.13em;
+	position: relative;
+}
+
+.section--articles {
+	margin-bottom: 4.5em;
+}
+
+.card-scientifique__title {
+	font-family: 'Baskervville', serif;
+	font-size: 1.18em;
+	color: #3a2b1a;
+	margin-bottom: 0.5em;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.card-scientifique__desc {
+	margin-bottom: 1.2em;
+	font-size: 1em;
+	font-family: 'Saira SemiCondensed', sans-serif;
+	color: #4b3a24;
+}
+
+.card-scientifique__btn {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	background: #d2c1a1;
+	color: #3a2b1a;
+	border: none;
+	border-radius: 8px;
+	font-family: 'Saira SemiCondensed', 'Arial', sans-serif;
+	font-size: 1em;
+}
+.card-scientifique__btn:hover {
+	background: #e7dbc7;
+	box-shadow: 2px 6px 16px #0003;
+}
+.card-scientifique__btnimg {
+	height: 4.2em;
+	width: 17em;
+	margin-left: -2em;
+	margin-top: 0.5em;
+    border: none;
+}
