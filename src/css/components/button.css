@@ -48,8 +48,9 @@ Tout ce qui est : .btn, .btn-light
   justify-content: flex-end;
   align-items: flex-end;
   position: absolute;
-  bottom: 45px; /* Décale le bouton vers le haut de 32px du bas */
-  pointer-events: none;
+  bottom: 45px;
+  z-index: 1000;
+  pointer-events: auto;
 }
 .hero__btn-discover {
   background: url('/assets/cards/découvrirplus.avif') center/cover no-repeat;
@@ -57,7 +58,12 @@ Tout ce qui est : .btn, .btn-light
   border-radius: 2rem;
   min-width: 260px;
   min-height: 48px;
-  margin-right: 34vw; /* Décale le bouton vers la gauche */
+  margin-right: 34vw;
+  z-index: 1100;
+  color: transparent;
+  text-indent: -9999px;
+  cursor: pointer;
+  display: inline-block;
 }
 
 #menu-overlay__btns {
