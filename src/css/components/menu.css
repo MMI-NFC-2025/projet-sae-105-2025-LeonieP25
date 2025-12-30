@@ -1,3 +1,20 @@
+a.btn.section__btn.full-card-link + .section__title,
+a.btn.section__btn.full-card-link + .section__title.section__title--no-underline {
+  border-bottom: none !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+/* Ajoute un border-bottom sous les titres de section */
+.section__title {
+  border-bottom: 3px solid var(--marron, #2d1c10);
+  padding-bottom: 0.15em;
+}
+/* Empêche le scroll de la page quand le menu overlay est actif */
+.menu-overlay-active html,
+.menu-overlay-active body {
+  overflow: hidden !important;
+  height: 100vh !important;
+}
 /* Overlay menu avec fond fondpagemenu.avif */
 #menu-overlay {
 	position: fixed;
