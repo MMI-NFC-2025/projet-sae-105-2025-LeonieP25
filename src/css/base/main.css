@@ -22,9 +22,9 @@ html, body {
   font-weight: 400 !important;
 }
 
-.main--dark .section__title,
-.main--dark .section__desc {
-  color: #e8e1d3;
+ .main--dark .section__title,
+ .main--dark .section__desc {
+  color: #F8E7C8 !important;
 }
 .main--dark .section {
   background: none !important;

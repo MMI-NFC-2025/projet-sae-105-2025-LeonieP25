@@ -4,94 +4,134 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Court-métrage et médias mettant en lumière les femmes de science à l'écran, notamment Nettie Stevens.">
+	<link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+	<link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+	<link rel="manifest" href="/assets/favicons/site.webmanifest" />
 	<title>Femmes de science à l'écran — Génésia</title>
 	<link rel="stylesheet" href="/src/css/style.css" />
-	<script type="module" src="/src/js/script.js"></script>
+	<link rel="stylesheet" href="/src/css/components/hero-ecran.css" />
+	<link rel="stylesheet" href="/src/css/components/carousel.css" />
+	<script type="module" src="/src/js/menu.js"></script>
+	<script src="/src/js/script.js"></script>
 </head>
-<body>
+<body style="background: url('/assets/img/FondPourFemmesLittérature.avif') center/cover no-repeat fixed;">
 	<header class="header">
 		<div class="header__brand">
-			<span class="header__logo">Génésia</span>
-			<span class="header__lang">FR</span>
+			<a href="index.html">
+				<img class="header__logo" src="/assets/icons/logogenesia.svg" alt="Logo Génésia" />
+			</a>
+			<span class="header__subtitle" hidden>Nettie Stevens, pionnière oubliée</span>
+			<span class="header__baseline" hidden>Redécouvrons Nettie Stevens, pionnière de la génétique, et celles qui ont marqué la science.</span>
 		</div>
-		<nav class="header__nav">
-			<ul class="header__menu u-list-unstyled">
-				<li class="header__item"><a class="header__link" href="index.html">Accueil</a></li>
-				<li class="header__item"><a class="header__link header__link--active" href="#">Femmes à l’écran</a></li>
-				<li class="header__item"><a class="header__link" href="femmes-littérature-sci.html">Littérature scientifique</a></li>
-				<li class="header__item"><a class="header__link" href="nettie-stevens.html">Nettie Stevens</a></li>
-				<li class="header__item"><a class="header__link" href="objet.html">Objets de science</a></li>
-				<li class="header__item"><a class="header__link" href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
+		<span class="header__lang">FR</span>
+		<a href="#menu-overlay" class="header__menu-btn" aria-label="Menu"><span></span></a>
 	</header>
-
-	<main class="main main--dark">
-		<section class="hero hero--femme-ecran">
-			<h1 class="hero__title">Femmes de science à l'écran</h1>
-			<p class="hero__subtitle">Court-métrage mettant en lumière Nettie Stevens</p>
-			<img class="hero__img" src="https://placehold.co/393x937" alt="Image du court-métrage Nettie Stevens" />
+		<div id="menu-overlay">
+			<div id="menu-overlay__top">
+				<span class="header__lang">FR</span>
+				<a href="#menu-overlay" class="header__menu-btn" aria-label="Menu"><span></span></a>
+			</div>
+			<div class="menu-overlay__header">
+				<span class="menu-overlay__title header__logo">Génésia</span>
+			</div>
+			<nav id="menu-overlay__links">
+				<a href="nettie-stevens.html">Nettie Stevens, pionnière des sciences</a>
+				<a href="femmes-littérature-sci.html">Femmes et littérature scientifique</a>
+				<a href="theorie.html">La théorie de Nettie Stevens</a>
+				<a href="femme-ecran.html">Femme de science à l'écran</a>
+				<a href="objet.html">Objet de science au féminin</a>
+			</nav>
+			<div id="menu-overlay__btns">
+				<a href="a-propos.html">À Propos</a>
+				<a href="contact.html">Contact</a>
+				<a href="glossaire.html">Glossaire</a>
+				<a href="autres-projets.html">Autres Projets</a>
+			</div>
+		</div>
+		<main class="main main--dark">
+		<section class="hero-femmeslitt">
+			<div class="hero-femmeslitt__container">
+				<div class="hero-femmeslitt__bar hero-femmeslitt__bar--left"></div>
+				<div class="hero-femmeslitt__dot"></div>
+				<div class="hero-femmeslitt__bar hero-femmeslitt__bar--right"></div>
+			</div>
+			<h1 class="hero-femmeslitt__title">Femmes de science<br>à l'écran</h1>
+			<div class="hero-femmeslitt__underline"></div>
 		</section>
-
+					   <!-- Carousel placé juste après la section médias -->
 		<section class="section section--court-metrage">
-			<h2 class="section__title">« Cherchez la femme ! », Nettie Stevens - La naissance de la génétique - ARTE</h2>
+			<h2 class="section__title">court-métrage mettant en lumière nettie stevens</h2>
 			<div class="section__divider"></div>
-			<p class="section__desc">Le court-métrage « Cherchez la femme – Nettie Stevens », diffusé sur ARTE, met en lumière le parcours de Nettie Stevens, une généticienne américaine du début du XXᵉ siècle.</p>
-			<p class="section__desc">À travers une narration concise et des illustrations animées, l’épisode retrace sa découverte fondamentale : l’identification des chromosomes sexuels X et Y comme déterminants du sexe biologique. Cette avancée majeure a été longtemps attribuée à ses collègues masculins, mais le court-métrage souligne l’importance de sa contribution à la science.</p>
-			<p class="section__desc">En seulement deux minutes, il rend hommage à cette scientifique souvent oubliée, tout en offrant une réflexion sur la reconnaissance des femmes dans le domaine scientifique.</p>
-			<div class="section__meta">ARTE, 2019</div>
-			<img class="section__img" src="https://placehold.co/300x169" alt="Image du court-métrage ARTE Nettie Stevens" />
-			<div class="section__caption">Court-métrage sur la vie et les travaux de Nettie Stevens.</div>
+			<p class="section__desc hero-ecran-desc">“Cherchez la femme !”, Nettie Stevens - La naissance de la génétique - ARTE</p>
+			<iframe title="Cherchez la femme !" src="https://www.arte.tv/embeds/fr/090626-016-A?autoplay=true&mute=0" class="video-arte"></iframe>
+			<span class="court-metrage-caption">Court-métrage sur la vie et les travaux de Nettie Stevens.</span>
+						<div class="court-metrage-bulle">
+								<span class="court-metrage-bulle-title">ARTE, 2019</span><br><br>
+								<span>
+									Le court-métrage « Cherchez la femme – Nettie Stevens », diffusé sur ARTE, met en lumière le parcours de Nettie Stevens, une généticienne américaine du début du XXᵉ siècle.<br><br>
+									À travers une narration concise et des illustrations animées, l’épisode retrace sa découverte fondamentale : l’identification des chromosomes sexuels X et Y comme déterminants du sexe biologique. Cette avancée majeure a été longtemps attribuée à ses collègues masculins, mais le court-métrage souligne l’importance de sa contribution à la science. En seulement deux minutes, il rend hommage à cette scientifique souvent oubliée, tout en offrant une réflexion sur la reconnaissance des femmes dans le domaine scientifique.
+								</span>
+						</div>
 		</section>
-
-		<section class="section section--medias">
-			<h2 class="section__title">Séries et médias complémentaires</h2>
-			<div class="section__divider"></div>
-			<ul class="media-list u-list-unstyled">
-				<li class="media-list__item">
-					<img class="media-list__img" src="https://placehold.co/180x234" alt="Radioactive, Marjane Satrapi, 2019" />
-					<div class="media-list__info">
-						<span class="media-list__title">« Radioactive », Marjane Satrapi, 2019</span>
-						<span class="media-list__desc">Un biopic vibrant sur Marie Curie, retraçant sa vie, ses découvertes majeures sur la radioactivité et les obstacles rencontrés en tant que femme dans un milieu dominé par les hommes.</span>
-					</div>
-				</li>
-				<li class="media-list__item">
-					<img class="media-list__img" src="https://placehold.co/169x234" alt="Picture a Scientist, Sharon Shattuck & Ian Cheney, 2020" />
-					<div class="media-list__info">
-						<span class="media-list__title">Picture a Scientist, Sharon Shattuck & Ian Cheney, 2020</span>
-						<span class="media-list__desc">Documentaire puissant donnant la parole à des chercheuses contemporaines confrontées au sexisme et à l’invisibilisation dans le milieu scientifique, tout en célébrant leur résilience.</span>
-					</div>
-				</li>
-				<li class="media-list__item">
-					<img class="media-list__img" src="https://placehold.co/183x234" alt="Hidden Figures, Theodore Melfi, 2016" />
-					<div class="media-list__info">
-						<span class="media-list__title">« Les Figures de l’ombre », Theodore Melfi, 2016</span>
-						<span class="media-list__desc">Inspiré de l’histoire vraie des mathématiciennes afro-américaines de la NASA, dont les calculs ont permis les premiers vols spatiaux américains. Un hommage fort à la persévérance et à la reconnaissance.</span>
-					</div>
-				</li>
-				<li class="media-list__item">
-					<img class="media-list__img" src="https://placehold.co/169x233" alt="Les femmes et la science, ARTE, 2021" />
-					<div class="media-list__info">
-						<span class="media-list__title">Les femmes et la science, Série documentaire ARTE, 2021</span>
-						<span class="media-list__desc">Une série qui explore les parcours, obstacles et réussites des femmes dans différents domaines scientifiques, du XIXᵉ siècle à aujourd’hui.</span>
-					</div>
-				</li>
-			</ul>
-		</section>
-
+			   <section class="section section--medias">
+				   <h2 class="section__title">Séries et médias complémentaires</h2>
+				   <!-- Carousel placé ici, sous le titre "Séries et médias complémentaires" -->
+				   <section class="section section--carousel-medias carousel-ecran">
+					   <div class="section__carousel">
+						   <div class="carousel-card">
+							   <div class="carousel-card__title">« Radioactive », Marjane Satrapi, 2019</div>
+							   <div class="carousel-card__desc">Un biopic vibrant sur Marie Curie, retraçant sa vie, ses découvertes majeures sur la radioactivité et les obstacles rencontrés en tant que femme dans un milieu dominé par les hommes.</div>
+							   <img class="carousel-card__img" src="/assets/carousel/radioactivecarousel.avif" alt="Radioactive, Marjane Satrapi, 2019">
+						   </div>
+						   <div class="carousel-card">
+							   <div class="carousel-card__title">Les femmes et la science, Série documentaire ARTE, 2021</div>
+							   <div class="carousel-card__desc">Une série qui explore les parcours, obstacles et réussites des femmes dans différents domaines scientifiques, du XIXᵉ siècle à aujourd’hui.</div>
+							   <img class="carousel-card__img" src="/assets/carousel/Artecarousel.avif" alt="Les femmes et la science, ARTE, 2021">
+						   </div>
+						   <div class="carousel-card">
+							   <div class="carousel-card__title">« Hidden Figures », Theodore Melfi, 2016</div>
+							   <div class="carousel-card__desc">Inspiré de l’histoire vraie des mathématiciennes afro-américaines de la NASA, dont les calculs ont permis les premiers vols spatiaux américains. Un hommage fort à la persévérance et à la reconnaissance.</div>
+							   <img class="carousel-card__img" src="/assets/carousel/hiddenfigurescarousel1.avif" alt="Hidden Figures, Theodore Melfi, 2016">
+						   </div>
+						   <div class="carousel-card">
+							   <div class="carousel-card__title">Picture a Scientist, Sharon Shattuck & Ian Cheney, 2020</div>
+							   <div class="carousel-card__desc">Documentaire puissant donnant la parole à des chercheuses contemporaines confrontées au sexisme et à l’invisibilisation dans le milieu scientifique, tout en célébrant leur résilience.</div>
+							   <img class="carousel-card__img" src="/assets/carousel/pictureascientistcarousel.avif" alt="Picture a Scientist, Sharon Shattuck & Ian Cheney, 2020">
+						   </div>
+					   </div>
+				   </section>
 		<nav class="article-nav">
 			<a class="article-nav__prev" href="nettie-stevens.html">Article précédent <span class="article-nav__arrow">←</span></a>
 			<a class="article-nav__next" href="femmes-littérature-sci.html">Article suivant <span class="article-nav__arrow">→</span></a>
 		</nav>
 	</main>
 
-	<footer class="footer">
-		<div class="footer__content">
-			<div class="footer__brand">Génésia</div>
-			<p class="footer__desc">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</p>
-			<p class="footer__info">Pour en savoir plus : <a href="https://mmimontbeliard.com" class="footer__link">MMI Montbéliard</a></p>
-			<p class="footer__mail"><a href="mailto:leonie.pruniaux@edu.univ-fcomte.fr">leonie.pruniaux@edu.univ-fcomte.fr</a></p>
-		</div>
-	</footer>
+		<footer class="footer">
+			<div class="footer__content">
+				<div class="footer__lignes">
+					<img src="/assets/icons/lignesfooter.svg" alt="Décor footer" />
+				</div>
+				<div class="footer__brand">Génésia</div>
+				<div class="footer__socials">
+					<a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+						<img src="/assets/icons/instagenesia.svg" alt="Logo Instagram" />
+					</a>
+					<a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+						<img src="/assets/icons/facebookgenesia.svg" alt="Logo Facebook" />
+					</a>
+					<a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter/X">
+						<img src="/assets/icons/twittergenesia.svg" alt="Logo Twitter/X" />
+					</a>
+				</div>
+				<div class="footer__ligne2">
+					<img src="/assets/icons/lignefooter2.svg" alt="Ligne décorative" />
+				</div>
+				<p class="footer__desc">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</p>
+				<p class="footer__info">Pour en savoir plus : <a href="https://mmimontbeliard.com" class="footer__link">MMI Montbéliard</a></p>
+				<p class="footer__mail"><a href="mailto:leonie.pruniaux@edu.univ-fcomte.fr">leonie.pruniaux@edu.univ-fcomte.fr</a></p>
+			</div>
+		</footer>
 </body>
 </html>

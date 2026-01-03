@@ -1,0 +1,64 @@
+.court-metrage-bulle-title {
+  font-family: 'Quicksand', sans-serif;
+}
+.court-metrage-bulle span:not(.court-metrage-bulle-title) {
+  font-family: 'Baskervville', serif;
+}
+/* hero-ecran.css : spécifique à la page femme-ecran.html */
+
+.hero-ecran-desc {
+  margin-top: 15px;
+}
+
+.court-metrage-caption {
+  display: block;
+  text-align: center;
+  color: #e2d6c2;
+  font-size: 0.95em;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+ .court-metrage-bulle {
+  position: relative;
+  border-radius: 9px;
+  border: 1.5px solid #2d1c10;
+  max-width: 340px;
+  width: 100%;
+  color: #e2d6c2;
+  font-family: 'Saira SemiCondensed', 'Arial', serif;
+  font-size: 1.01em;
+  box-shadow: 0 2px 8px #0003;
+  padding: 1.1em 1.1em 1.1em 1.1em;
+  margin: 1.2em auto 2em auto;
+  overflow: hidden;
+  background: none;
+}
+.court-metrage-bulle::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #3a2714;
+  opacity: 0.44;
+  border-radius: 9px;
+  z-index: 0;
+  pointer-events: none;
+}
+.court-metrage-bulle > * {
+  position: relative;
+  z-index: 1;
+}
+
+.court-metrage-bulle::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #241309;
+  opacity: 0.4;
+  border-radius: 10px;
+  z-index: 0;
+  pointer-events: none;
+}
+.court-metrage-bulle > * {
+  position: relative;
+  z-index: 1;
+}

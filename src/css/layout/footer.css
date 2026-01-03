@@ -25,6 +25,30 @@
   z-index: 2;
 }
 
+.footer__socials {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -0.5rem;
+}
+.footer__socials img {
+  width: 58px;
+  height: 58px;
+  opacity: 1;
+  z-index: 4;
+  position: relative;
+}
+
+.footer__ligne2 {
+  width: 100%;
+  max-width: 300px;
+  margin: 1.2rem auto 0.5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer__brand {
   font-family: 'Spectral', serif;
   font-size: 2.1rem;
