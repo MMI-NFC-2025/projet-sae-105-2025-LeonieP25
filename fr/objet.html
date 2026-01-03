@@ -1,86 +1,125 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+	<link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+	<link rel="manifest" href="/assets/favicons/site.webmanifest" />
+	<link rel="manifest" href="/assets/favicons/site.webmanifest">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Présentation d’un livre de la bibliothèque universitaire sur la place des femmes dans la recherche scientifique.">
 	<title>Objet de science au féminin — Génésia</title>
 	<link rel="stylesheet" href="/src/css/style.css" />
-	<script type="module" src="/src/js/script.js"></script>
+	<link rel="stylesheet" href="/src/css/components/article-nav.css" />
+	<link rel="stylesheet" href="/src/css/components/menu.css" />
+	<link rel="stylesheet" href="/src/css/components/hero-objet.css" />
+	<link rel="stylesheet" href="/src/css/layout/header.css" />
+	<link rel="stylesheet" href="/src/css/layout/footer.css" />
+	<script type="module" src="/src/js/menu.js"></script>
 </head>
-<body>
+<body style="background: url('/assets/img/FondPourFemmesLittérature.avif') center/cover no-repeat fixed; background-attachment: fixed; background-size: cover; background-position: center; filter: none;">
 	<header class="header">
 		<div class="header__brand">
-			<span class="header__logo">Génésia</span>
-			<span class="header__lang">FR</span>
+			<a href="index.html">
+				<img class="header__logo" src="/assets/icons/logogenesia.svg" alt="Logo Génésia" />
+			</a>
+				<span class="header__subtitle" hidden>Nettie Stevens, pionnière oubliée</span>
+				<span class="header__baseline" hidden>Redécouvrons Nettie Stevens, pionnière de la génétique, et celles qui ont marqué la science.</span>
 		</div>
-		<nav class="header__nav">
-			<ul class="header__menu u-list-unstyled">
-				<li class="header__item"><a class="header__link" href="index.html">Accueil</a></li>
-				<li class="header__item"><a class="header__link" href="femme-ecran.html">Femmes à l’écran</a></li>
-				<li class="header__item"><a class="header__link" href="femmes-littérature-sci.html">Littérature scientifique</a></li>
-				<li class="header__item"><a class="header__link" href="nettie-stevens.html">Nettie Stevens</a></li>
-				<li class="header__item"><a class="header__link header__link--active" href="#">Objets de science</a></li>
-				<li class="header__item"><a class="header__link" href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
+		<span class="header__lang">FR</span>
+		<a href="#menu-overlay" class="header__menu-btn" aria-label="Menu"><span></span></a>
 	</header>
 
-	<main class="main main--dark">
-		<section class="hero hero--objet">
-			<h1 class="hero__title">Objet de science au féminin</h1>
-			<p class="hero__subtitle">Présentation d’un livre de la bibliothèque universitaire</p>
-			<img class="hero__img" src="https://placehold.co/172x237" alt="Couverture du livre présenté" />
-		</section>
 
-		<section class="section section--choix-livre">
-			<h2 class="section__title">Les travailleuses invisibles de la recherche scientifique</h2>
-			<div class="section__divider"></div>
-			<p class="section__desc">J’ai choisi ce livre parce qu’il propose une réflexion critique sur la place des femmes dans la recherche scientifique. Il met en évidence les mécanismes d’invisibilisation qui persistent encore aujourd’hui et permet de comprendre les inégalités de reconnaissance dans le monde scientifique.</p>
-			<p class="section__desc">C’est un livre à la fois documenté et engagé, qui apporte un regard sociologique essentiel sur les réalités du travail des chercheuses.</p>
-		</section>
+		<main class="main main--dark">
+			<section class="hero-objet">
+				<div class="hero-objet__container">
+					<div class="hero-objet__bar hero-objet__bar--left"></div>
+					<div class="hero-objet__dot"></div>
+					<div class="hero-objet__bar hero-objet__bar--right"></div>
+				</div>
+				<h1 class="hero-objet__title">Objet de science<br>au féminin</h1>
+				<div class="hero-objet__underline"></div>
+			</section>
 
-		<section class="section section--presentation-livre">
-			<h2 class="section__title">Présentation de l’ouvrage</h2>
-			<div class="section__divider"></div>
-			<p class="section__desc">Ce livre explore la face cachée de la recherche scientifique, celle des femmes dont le travail, pourtant essentiel, est resté dans l’ombre. Catherine Puigelier s’intéresse à celles qui ont collecté, classé, traduit ou expérimenté sans jamais être reconnues.</p>
-			<p class="section__desc">À travers de nombreux exemples, elle met en lumière les effets de l’invisibilisation systématique, appelé effet Matilda, qui a effacé la contribution de nombreuses femmes scientifiques au profit de leurs collègues masculins. L’ouvrage rend hommage à ces travailleuses silencieuses mais indispensables à l’avancée de la science.</p>
-			<div class="section__meta">Dos du livre :</div>
-			<img class="section__img" src="https://placehold.co/235x336" alt="Dos du livre présenté" />
-		</section>
+			<section class="section section--presentation-livre-BU">
+				<h2 class="section__title">Présentation d’un livre de la bibliothèque universitaire</h2>
+				<img class="section__img" src="https://placehold.co/235x336" alt="Dos du livre présenté" />
+				<div class="section__divider"></div>
+			</section>
+
+			<section class="section section--choix-livre">
+				<h2 class="section__desc">Les travailleuses invisibles de la recherche scientifique</h2>
+				<div class="section__divider"></div>
+				<p class="section__desc">J’ai choisi ce livre parce qu’il propose une réflexion critique sur la place des femmes dans la recherche scientifique. Il met en évidence les mécanismes d’invisibilisation qui persistent encore aujourd’hui et permet de comprendre les inégalités de reconnaissance dans le monde scientifique.</p>
+				<p class="section__desc">C’est un livre à la fois documenté et engagé, qui apporte un regard sociologique essentiel sur les réalités du travail des chercheuses.</p>
+			</section>
+
+			<section class="section section--presentation-livre">
+				<h2 class="section__title">Présentation de l’ouvrage</h2>
+				<div class="section__divider"></div>
+				<p class="section__desc">Ce livre explore la face cachée de la recherche scientifique, celle des femmes dont le travail, pourtant essentiel, est resté dans l’ombre. Catherine Puigelier s’intéresse à celles qui ont collecté, classé, traduit ou expérimenté sans jamais être reconnues.</p>
+				<p class="section__desc">À travers de nombreux exemples, elle met en lumière les effets de l’invisibilisation systématique, appelé effet Matilda, qui a effacé la contribution de nombreuses femmes scientifiques au profit de leurs collègues masculins. L’ouvrage rend hommage à ces travailleuses silencieuses mais indispensables à l’avancée de la science.</p>
+				<div class="section__meta">Dos du livre :</div>
+				<img class="section__img" src="https://placehold.co/235x336" alt="Dos du livre présenté" />
+			</section>
+		</main>
 
 		<nav class="article-nav">
-			<a class="article-nav__prev" href="femme-ecran.html">Article précédent <span class="article-nav__arrow">←</span></a>
+			<a class="article-nav__next" href="femmes-littérature-sci.html">Article suivant →</a>
 		</nav>
-	</main>
 
-	<div id="menu-overlay">
-		<div class="menu-overlay__header">
-			<span class="menu-overlay__lang">FR</span>
-			<a href="#" class="header__menu-btn" aria-label="Fermer le menu"></a>
+		<div id="menu-overlay">
+			<div id="menu-overlay__top">
+				<span class="header__lang">FR</span>
+				<a href="#menu-overlay" class="header__menu-btn" aria-label="Menu"><span></span></a>
+			</div>
+			<div class="menu-overlay__header">
+				<span class="menu-overlay__title header__logo">Génésia</span>
+			</div>
+			<nav id="menu-overlay__links">
+				<a href="nettie-stevens.html">Nettie Stevens, pionnière des sciences</a>
+				<a href="femmes-littérature-sci.html">Femmes et littérature scientifique</a>
+				<a href="theorie.html">La théorie de Nettie Stevens</a>
+				<a href="femme-ecran.html">Femme de science à l'écran</a>
+				<a href="objet.html">Objet de science au féminin</a>
+			</nav>
+			<div id="menu-overlay__btns">
+				<a href="a-propos.html">À Propos</a>
+				<a href="contact.html">Contact</a>
+				<a href="glossaire.html">Glossaire</a>
+				<a href="autres-projets.html">Autres Projets</a>
+			</div>
 		</div>
-		<nav id="menu-overlay__links">
-			<a href="nettie-stevens.html">Nettie Stevens, pionnière des sciences</a>
-			<a href="femmes-littérature-sci.html">Femmes et littérature scientifique</a>
-			<a href="theorie.html">La théorie de Nettie Stevens</a>
-			<a href="femme-ecran.html">Femme de science à l'écran</a>
-			<a href="objet.html">Objet de science au féminin</a>
-		</nav>
-		<div id="menu-overlay__btns">
-			<a href="a-propos.html">À Propos</a>
-			<a href="contact.html">Contact</a>
-			<a href="glossaire.html">Glossaire</a>
-			<a href="autres-projets.html">Autres Projets</a>
-		</div>
-	</div>
 
-	<footer class="footer">
-		<div class="footer__content">
-			<div class="footer__brand">Génésia</div>
-			<p class="footer__desc">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</p>
-			<p class="footer__info">Pour en savoir plus : <a href="https://mmimontbeliard.com" class="footer__link">MMI Montbéliard</a></p>
-			<p class="footer__mail"><a href="mailto:leonie.pruniaux@edu.univ-fcomte.fr">leonie.pruniaux@edu.univ-fcomte.fr</a></p>
-		</div>
-	</footer>
-</body>
-</html>
+		<footer class="footer">
+			<div class="footer__content">
+				<div class="footer__lignes">
+					<img src="/assets/icons/lignesfooter.svg" alt="Décor footer" />
+				</div>
+				<div class="footer__brand">Génésia</div>
+				<div class="footer__socials">
+					<a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+						<img src="/assets/icons/instagenesia.svg" alt="Logo Instagram" />
+					</a>
+					<a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+						<img src="/assets/icons/facebookgenesia.svg" alt="Logo Facebook" />
+					</a>
+					<a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter/X">
+						<img src="/assets/icons/twittergenesia.svg" alt="Logo Twitter/X" />
+					</a>
+				</div>
+				<div class="footer__ligne2">
+					<img src="/assets/icons/lignefooter2.svg" alt="Ligne décorative" />
+				</div>
+				<p class="footer__desc">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</p>
+				<p class="footer__info">Pour en savoir plus : <a href="https://mmimontbeliard.com" class="footer__link">MMI Montbéliard</a></p>
+				<p class="footer__mail"><a href="mailto:leonie.pruniaux@edu.univ-fcomte.fr">leonie.pruniaux@edu.univ-fcomte.fr</a></p>
+			</div>
+		</footer>
+
+	</body>
+	</html>

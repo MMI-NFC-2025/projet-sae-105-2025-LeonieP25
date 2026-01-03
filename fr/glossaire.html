@@ -2,10 +2,20 @@
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+  <link rel="manifest" href="/assets/favicons/site.webmanifest">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Glossaire des termes scientifiques et sociologiques du site.">
 	<title>Glossaire — Génésia</title>
 	<link rel="stylesheet" href="/src/css/style.css" />
+	<link rel="stylesheet" href="/src/css/components/article-nav.css" />
+	<link rel="stylesheet" href="/src/css/components/menu.css" />
+	<link rel="stylesheet" href="/src/css/layout/header.css" />
+	<link rel="stylesheet" href="/src/css/layout/footer.css" />
 	<script type="module" src="/src/js/script.js"></script>
 </head>
 <body>
@@ -26,25 +36,41 @@
 				<li class="header__item"><a class="header__link header__link--active" href="#">Glossaire</a></li>
 			</ul>
 		</nav>
-	</header>
-
-	<main class="main main--dark">
-		<section class="hero hero--glossaire">
-			<h1 class="hero__title">Glossaire</h1>
-			<p class="hero__subtitle">glossaire</p>
-		</section>
-
-		<section class="section section--glossary">
-			<h2 class="section__title">Termes clés</h2>
-			<div class="section__divider"></div>
-			<ul class="glossary-list">
-				<li class="glossary-list__item"><strong>Chromosome :</strong> Structure dans la cellule qui contient l’ADN et donc les gènes.</li>
-				<li class="glossary-list__item"><strong>ADN (Acide désoxyribonucléique) :</strong> Molécule qui porte les informations génétiques de tous les êtres vivants.</li>
-				<li class="glossary-list__item"><strong>Gène :</strong> Morceau d’ADN qui détermine un caractère (comme la couleur des yeux).</li>
-				<li class="glossary-list__item"><strong>Sexe chromosomique :</strong> Manière dont le sexe biologique est défini par les chromosomes X et Y (XX = femme, XY = homme).</li>
-				<li class="glossary-list__item"><strong>Cytologie :</strong> Science qui étudie les cellules et leur fonctionnement.</li>
-				<li class="glossary-list__item"><strong>Trisomie 21 :</strong> Maladie génétique causée par un chromosome en trop (le chromosome 21).</li>
-				<li class="glossary-list__item"><strong>Effet Matilda :</strong> Fait d’attribuer les découvertes de femmes scientifiques à des hommes.</li>
+	<body style="background: url('/assets/img/FondPourFemmesLittérature.avif') center/cover no-repeat fixed; background-attachment: fixed; background-size: cover; background-position: center; filter: none;">
+		<header class="header">
+			<div class="header__brand">
+				<a href="index.html">
+					<img class="header__logo" src="/assets/icons/logogenesia.svg" alt="Logo Génésia" />
+				</a>
+				<span class="header__subtitle" hidden>Nettie Stevens, pionnière oubliée</span>
+				<span class="header__baseline" hidden>Redécouvrons Nettie Stevens, pionnière de la génétique, et celles qui ont marqué la science.</span>
+			</div>
+			<span class="header__lang">FR</span>
+			<a href="#menu-overlay" class="header__menu-btn" aria-label="Menu"><span></span></a>
+		</header>
+		<div id="menu-overlay">
+			<div id="menu-overlay__top">
+				<span class="header__lang">FR</span>
+				<a href="#menu-overlay" class="header__menu-btn" aria-label="Menu"><span></span></a>
+			</div>
+			<div class="menu-overlay__header">
+				<span class="menu-overlay__title header__logo">Génésia</span>
+			</div>
+			<nav id="menu-overlay__links">
+				<a href="index.html">Accueil</a>
+				<a href="nettie-stevens.html">Nettie Stevens, pionnière des sciences</a>
+				<a href="femmes-littérature-sci.html">Femmes et littérature scientifique</a>
+				<a href="theorie.html">La théorie de Nettie Stevens</a>
+				<a href="femme-ecran.html">Femme de science à l'écran</a>
+				<a href="objet.html">Objet de science au féminin</a>
+			</nav>
+			<div id="menu-overlay__btns">
+				<a href="a-propos.html">À Propos</a>
+				<a href="contact.html">Contact</a>
+				<a href="glossaire.html">Glossaire</a>
+				<a href="autres-projets.html">Autres Projets</a>
+			</div>
+		</div>
 				<li class="glossary-list__item"><strong>Invisibilisation :</strong> Effacement ou oubli du rôle des femmes dans l’histoire ou la science.</li>
 				<li class="glossary-list__item"><strong>Figures oubliées :</strong> Femmes scientifiques dont les découvertes ont été ignorées ou attribuées à des hommes.</li>
 				<li class="glossary-list__item"><strong>Représentation :</strong> Manière dont les femmes sont montrées dans les livres, les médias ou les manuels.</li>

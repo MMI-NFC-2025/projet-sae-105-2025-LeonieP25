@@ -1,0 +1,40 @@
+/* Navigation Article Précédent/Suivant */
+a.article-nav__next {
+  color: var(--beige-foncé); 
+  font-family: 'Saira SemiCondensed', sans-serif; 
+  font-size: 0.8rem; 
+  font-weight: 300; 
+  text-decoration: underline; 
+  text-underline-offset: 1px; 
+  border: none; 
+  background: none; 
+  position: absolute;
+  right: 2rem !important;
+}
+
+a.article-nav__prev {
+  color: var(--beige-foncé); 
+  font-family: 'Saira SemiCondensed', sans-serif; 
+  font-size: 0.8rem; 
+  font-weight: 300; 
+  text-decoration: underline; 
+  text-underline-offset: 1px; 
+  border: none; 
+  background: none; 
+  position: absolute;
+  right: 18.5rem !important;
+}
+
+.article-nav {
+  position: relative;
+  min-height: 2.5rem;
+}
+
+@media (max-width: 600px) {
+  a.article-nav__next {
+    right: 7rem;
+  }
+  a.article-nav__prev {
+    right: 12rem;
+  }
+}

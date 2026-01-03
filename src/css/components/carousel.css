@@ -1,3 +1,11 @@
+.section__carousel {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 1.2em;
+  justify-content: flex-start;
+  scrollbar-width: none;
+}
 /* --- Styles précis pour le carousel de femme-ecran.html selon la maquette --- */
 .carousel-ecran .section__carousel {
   background: none;
@@ -7,7 +15,7 @@
 }
 
 .carousel-ecran .carousel-card {
-  background: none;
+  background: rgba(75, 46, 25, 0.03); /* marron, opacité 0.03 */
   border: 2px solid var(--marron, #4b2e19);
   border-radius: 12px;
   width: 180px;
@@ -23,7 +31,7 @@
 
 .carousel-ecran .carousel-card__img {
   width: 250px !important;
-  height: 260px !important;
+  height: 340px !important;
   border-radius: 8px 8px 0 0;
   margin-top: -13px !important;
   margin-bottom: 0.6em;
@@ -31,16 +39,19 @@
 }
 
 .carousel-ecran .carousel-card__title {
+    text-decoration: underline;
   order: 1;
 }
 .carousel-ecran .carousel-card__desc {
   order: 2;
+  font-family: 'Saira Semi Condensed', sans-serif;
 }
 
 .carousel-ecran .carousel-card__title {
-  color: var(--beige-fonce, #F8E7C8);
+  color: #F8E7C8;
   background: transparent;
-  font-size: 1.08em;
+  font-size: 0.88em !important;
+  font-family: 'Volkhov', serif;
 
 @media (max-width: 600px) {
   .carousel-ecran .carousel-card {
@@ -53,21 +64,18 @@
     height: auto;
   }
 }
-
-/* Correction stricte pour le carousel de femme-ecran.html selon la maquette fournie */
   font-weight: 600;
   text-align: left;
   margin: 0.2em 0 0.3em 0;
   padding: 0 0.2em;
   border-radius: 0;
-  border-bottom: 2px solid var(--beige-fonce, #b09a6b);
   width: 90%;
   align-self: flex-start;
 }
 
 .carousel-ecran .carousel-card__desc {
   color: var(--beige-clair, #DBD5CA) !important;
-  font-size: 0.98em;
+  font-size: 0.88em !important;
   text-align: left;
   margin: 0.7em 0.2em 0 0.2em !important;
   padding: 0;
@@ -91,7 +99,7 @@
   background: rgba(75, 46, 25, 0.3); /* marron, opacité 0.3 */
   border: 2px solid var(--marron, #4b2e19);
   border-radius: 16px;
-  min-height: 420px;
+  min-height: 520px;
   max-width: 240px;
   min-width: 240px;
   margin: 0 0.5em;
@@ -128,7 +136,6 @@
   margin: 0.2em 0 0.3em 0;
   padding: 0 0.2em;
   border-radius: 0;
-  border-bottom: 2px solid var(--beige-fonce, #DBD5CA);
   width: 90%;
   align-self: flex-start;
 }
