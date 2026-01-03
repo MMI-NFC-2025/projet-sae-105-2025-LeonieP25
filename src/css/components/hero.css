@@ -16,7 +16,7 @@
   margin-right: 0;
   width: calc(100% + 0.75rem);
 }
-/*
+
 @media (min-width: 1024px) {
   .hero {
     margin-left: calc(-1 * 0.75rem);
