@@ -84,6 +84,7 @@ main[class*="hero-theorie-bg"]::before {
   margin: 0 auto;
 }
 
+/*
 @media (min-width: 600px) {
   .hero-theorie__title {
     font-size: 18px;
