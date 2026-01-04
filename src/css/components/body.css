@@ -1,0 +1,5 @@
+/* Fond de page sur tout le body, y compris sous le footer */
+body {
+  background: url('/assets/img/FondPage.avif');
+  background-size: 100%;
+}

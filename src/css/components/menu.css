@@ -27,8 +27,17 @@ a.btn.section__btn.full-card-link + .section__title.section__title--no-underline
   background: url('/assets/img/fondpagemenu.avif') center/cover no-repeat;
   display: none;
   overflow: hidden !important;
+  height: 100vh !important;
   padding: 0;
 }
+
+.menu-overlay-active html, .menu-overlay-active body {
+  overflow: hidden !important;
+  height: 100vh !important;
+  position: fixed !important;
+  width: 100vw !important;
+}
+
 #menu-overlay.active {
 	display: block;
 }
