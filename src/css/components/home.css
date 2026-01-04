@@ -1,0 +1,5 @@
+/* Rendre le span.header__lang cliquable comme un lien */
+.header__lang {
+	cursor: pointer;
+	color: var(--beige-très-clair);
+}
