@@ -1,3 +1,12 @@
+@media (max-width: 700px) {
+  .bulle-ref {
+    max-width: 600px !important;
+    width: 95vw !important;
+    min-width: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 /* Bulle citation style */
 .bulle-citation {
   border-radius: 8px;

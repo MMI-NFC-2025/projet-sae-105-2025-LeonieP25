@@ -1,3 +1,10 @@
+body[data-page="theorie"] {
+  background: url('/assets/img/FondDePageTheorie.avif') center/cover no-repeat fixed !important;
+  background-size: cover !important;
+  background-position: center top !important;
+  background-attachment: fixed !important;
+  filter: none !important;
+}
 .hero-femmeslitt__subtitle {
   color: var(--beige-clair);
   font-style: italic;

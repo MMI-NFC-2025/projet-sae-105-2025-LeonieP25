@@ -6,18 +6,12 @@
   margin-top: 1.5em;
 }
 /* Fond spécifique uniquement pour la page Femmes et littérature scientifique */
-.main--dark.hero-femmeslitt-bg {
-  position: relative;
-  z-index: 0;
-}
-.main--dark.hero-femmeslitt-bg::before {
-  content: '';
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  z-index: -1;
-  background: url('/assets/img/FondPourFemmesLittérature.avif') repeat center top fixed;
-  background-size: cover;
-  pointer-events: none;
+body.bg-femmeslitt {
+  background: url('/assets/img/FondPourFemmesLittérature.avif') center/cover no-repeat fixed !important;
+  background-size: cover !important;
+  background-position: center top !important;
+  background-attachment: fixed !important;
+  filter: none !important;
 }
 
 .hero-femmeslitt {

@@ -1,3 +1,18 @@
+@media (max-width: 700px) {
+  a.article-nav__next {
+    right: 1.2rem !important;
+    left: auto !important;
+    font-size: 1em;
+  }
+  a.article-nav__prev {
+    left: 1.2rem !important;
+    right: auto !important;
+    font-size: 1em;
+  }
+  .article-nav {
+    min-height: 2.5rem;
+  }
+}
 /* Navigation Article Précédent/Suivant */
 a.article-nav__next {
   color: var(--beige-foncé); 
@@ -22,7 +37,7 @@ a.article-nav__prev {
   border: none; 
   background: none; 
   position: absolute;
-  right: 16.5rem !important;
+  right: 18rem !important;
 }
 
 .article-nav {
