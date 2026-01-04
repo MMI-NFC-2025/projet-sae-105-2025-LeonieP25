@@ -1,10 +1,3 @@
-body[data-page="femme-ecran"] {
-  background: url('/assets/img/FondPourFemmesLittérature.avif') center/cover no-repeat fixed !important;
-  background-size: cover !important;
-  background-position: center top !important;
-  background-attachment: fixed !important;
-  filter: none !important;
-}
 .court-metrage-bulle-title {
   font-family: 'Quicksand', sans-serif;
 }
@@ -36,13 +29,7 @@ body[data-page="femme-ecran"] {
   font-size: 1.01em;
   box-shadow: 0 2px 8px #0003;
   padding: 1.1em 1.1em 1.1em 1.1em;
-  margin: 1.2em 80% 2em auto;
-
-@media (max-width: 700px) {
-  .court-metrage-bulle {
-    margin: 1.2em auto 2em auto !important;
-  }
-}
+  margin: 1.2em auto 2em auto;
   overflow: hidden;
   background: none;
 }

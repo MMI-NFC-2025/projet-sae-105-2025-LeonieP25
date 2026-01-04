@@ -1,6 +1,3 @@
-body[data-page="theorie"] {
-  /* Suppression du background ici, géré par main.hero-theorie-bg::before */
-}
 .hero-femmeslitt__subtitle {
   color: var(--beige-clair);
   font-style: italic;

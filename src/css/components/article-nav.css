@@ -22,10 +22,19 @@ a.article-nav__prev {
   border: none; 
   background: none; 
   position: absolute;
-  right: 15.5rem !important;
+  right: 18.5rem !important;
 }
 
 .article-nav {
   position: relative;
   min-height: 2.5rem;
+}
+
+@media (max-width: 600px) {
+  a.article-nav__next {
+    right: 7rem;
+  }
+  a.article-nav__prev {
+    right: 12rem;
+  }
 }
