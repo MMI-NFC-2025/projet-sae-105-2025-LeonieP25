@@ -1,3 +1,10 @@
+@media (max-width: 700px) {
+  .main--dark.hero-femmeslitt-bg::before {
+    background-size: auto;
+    background-position: center top;
+    background-attachment: scroll;
+  }
+}
 /* Fond spécifique pour la page Femmes de Lettres et Sciences */
 .main--dark.hero-femmeslitt-bg {
   position: relative;
