@@ -1,3 +1,24 @@
+/* Bulle marron translucide pour les paragraphes de la section présentation-livre */
+.section--presentation-livre .section__desc.bulle-marron {
+  background: rgba(75, 46, 25, 0.3); /* marron avec opacité 0.3 */
+  border: 1px solid #2d1a0d; /* marron plus foncé */
+  border-radius: 18px;
+  padding: 1em 1.2em;
+  margin: 1.2em 0;
+  box-sizing: border-box;
+  box-shadow: 0 2px 14px 0 rgba(45, 26, 13, 0.25);
+  font-family: 'Saira Semi Condensed';
+  font-size: 1.16em;
+  color: var(--beige-section, #f8e7c8);
+}
+/* Supprimer le margin-bottom pour le paragraphe section__desc dans section--choix-livre */
+.section--choix-livre .section__desc {
+  margin-bottom: 15px !important;
+}
+/* Supprimer le margin-top pour la section section--choix-livre sur objet.html */
+.section--choix-livre {
+  margin-top: -88px !important;
+}
 /* Fond spécifique pour la page Objet de science au féminin */
 .main--dark.hero-objet-bg {
   position: relative;

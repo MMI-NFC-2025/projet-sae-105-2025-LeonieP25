@@ -1,3 +1,19 @@
+/* Image du dos du livre : mêmes propriétés que présentation livre BU */
+.section__desc + .section__img[src*="dosdulivre"] {
+  max-width: 230px !important;
+  width: 100% !important;
+  height: auto !important;  display: block;
+  margin: 0.5em auto 1.5em auto;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.section--presentation-livre-BU .section__img {
+  max-width: 210px !important;
+  height: auto !important;
+  display: block;
+  margin: 0.5em auto 1.5em auto;
+  border-radius: 12px;
+}
 .video-arte {
     display: block;
     margin: 0 auto;
