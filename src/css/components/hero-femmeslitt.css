@@ -97,14 +97,6 @@
   color: var(--beige-section);
 }
 
-.main--dark .section {
-  background: none !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .section.section--context {
   margin-top: -8.5em;
 }
