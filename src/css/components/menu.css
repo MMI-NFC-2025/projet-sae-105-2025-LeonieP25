@@ -1,21 +1,4 @@
-#menu-overlay {
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  width: 100vw;
-  height: 100vh;
-  min-height: 100vh;
-  min-width: 100vw;
-  z-index: 9999;
-  background: rgba(30, 20, 10, 0.98); /* adapte la couleur si besoin */
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  touch-action: none;
-}
 
-body.menu-open {
-  overflow: hidden !important;
-  height: 100vh !important;
-}
 a.btn.section__btn.full-card-link + .section__title,
 a.btn.section__btn.full-card-link + .section__title.section__title--no-underline {
   border-bottom: none !important;
