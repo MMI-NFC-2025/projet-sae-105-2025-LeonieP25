@@ -2,80 +2,186 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/favicons/site.webmanifest" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Glossary of scientific and sociological terms used on the site.">
-	<title>Glossary — Genesia</title>
+	<title>Glossary — Génésia</title>
 	<link rel="stylesheet" href="/src/css/style.css" />
-	<script type="module" src="/src/js/script.js"></script>
+	<link rel="stylesheet" href="/src/css/components/glossaire.css" />
+	<link rel="stylesheet" href="/src/css/components/article-nav.css" />
+	<link rel="stylesheet" href="/src/css/components/menu.css" />
+	<link rel="stylesheet" href="/src/css/layout/header.css" />
+	<link rel="stylesheet" href="/src/css/layout/footer.css" />
+	<script type="module" src="/src/js/menu.js"></script>
 </head>
-<body>
+
+<body style="background: url('/assets/img/FondPourFemmesLittérature.avif') center/cover no-repeat fixed;">
 	<header class="header">
 		<div class="header__brand">
-			<span class="header__logo">Genesia</span>
-			<span class="header__lang">EN</span>
+			<a href="index.html">
+				<img class="header__logo" src="/assets/icons/logogenesia.svg" alt="Génésia logo" />
+			</a>
+			<span class="header__subtitle" hidden>Nettie Stevens, an overlooked pioneer</span>
+			<span class="header__baseline" hidden>Rediscover Nettie Stevens, a pioneer of genetics, and the women who shaped science.</span>
 		</div>
-		<nav class="header__nav">
-			<ul class="header__menu u-list-unstyled">
-				<li class="header__item"><a class="header__link" href="index.html">Home</a></li>
-				<li class="header__item"><a class="header__link" href="femme-ecran.html">Women on Screen</a></li>
-				<li class="header__item"><a class="header__link" href="femmes-littérature-sci.html">Scientific Literature</a></li>
-				<li class="header__item"><a class="header__link" href="nettie-stevens.html">Nettie Stevens</a></li>
-				<li class="header__item"><a class="header__link" href="objet.html">Science Objects</a></li>
-				<li class="header__item"><a class="header__link" href="a-propos.html">About</a></li>
-				<li class="header__item"><a class="header__link" href="contact.html">Contact</a></li>
-				<li class="header__item"><a class="header__link header__link--active" href="#">Glossary</a></li>
-			</ul>
-		</nav>
+		<span class="header__lang">EN</span>
+		<a href="#menu-overlay" class="header__menu-btn" aria-label="Menu"><span></span></a>
 	</header>
 
 	<main class="main main--dark">
-		<section class="hero hero--glossaire">
-			<h1 class="hero__title">Glossary</h1>
-			<p class="hero__subtitle">glossary</p>
+		<section class="hero-femmeslitt">
+			<div class="hero-femmeslitt__container">
+				<div class="hero-femmeslitt__bar hero-femmeslitt__bar--left"></div>
+				<div class="hero-femmeslitt__dot"></div>
+				<div class="hero-femmeslitt__bar hero-femmeslitt__bar--right"></div>
+			</div>
+			<h1 class="hero-femmeslitt__title">Glossary</h1>
+			<div class="hero-femmeslitt__underline"></div>
 		</section>
 
-		<section class="section section--glossary">
-			<h2 class="section__title">Key terms</h2>
-			<div class="section__divider"></div>
-			<ul class="glossary-list">
-				<li class="glossary-list__item"><strong>Chromosome:</strong> Structure in the cell that contains DNA and thus genes.</li>
-				<li class="glossary-list__item"><strong>DNA (Deoxyribonucleic acid):</strong> Molecule that carries the genetic information of all living beings.</li>
-				<li class="glossary-list__item"><strong>Gene:</strong> A segment of DNA that determines a trait (like eye color).</li>
-				<li class="glossary-list__item"><strong>Chromosomal sex:</strong> How biological sex is defined by X and Y chromosomes (XX = female, XY = male).</li>
-				<li class="glossary-list__item"><strong>Cytology:</strong> Science that studies cells and their functioning.</li>
-				<li class="glossary-list__item"><strong>Down syndrome:</strong> Genetic disorder caused by an extra chromosome (chromosome 21).</li>
-				<li class="glossary-list__item"><strong>Matilda Effect:</strong> Attributing the discoveries of women scientists to men.</li>
-				<li class="glossary-list__item"><strong>Invisibility:</strong> Erasure or forgetting of the role of women in history or science.</li>
-				<li class="glossary-list__item"><strong>Forgotten figures:</strong> Women scientists whose discoveries were ignored or attributed to men.</li>
-				<li class="glossary-list__item"><strong>Representation:</strong> How women are shown in books, media, or textbooks.</li>
-				<li class="glossary-list__item"><strong>Biopic:</strong> Film depicting the life of a real person, often a scientist, artist, or historical figure.</li>
-				<li class="glossary-list__item"><strong>Pioneer:</strong> A woman who is among the first to accomplish something in a particular field.</li>
-				<li class="glossary-list__item"><strong>Resilience:</strong> Ability to overcome obstacles or difficulties, especially in a context of discrimination or marginalization.</li>
-				<li class="glossary-list__item"><strong>Struggle for recognition:</strong> Effort made by women to gain visibility and credit in the scientific field.</li>
-				<li class="glossary-list__item"><strong>Gamete:</strong> Reproductive cell (sperm or egg) that transmits half of the genetic material to the offspring.</li>
-				<li class="glossary-list__item"><strong>Heredity:</strong> Transmission of biological traits from one generation to the next.</li>
-				<li class="glossary-list__item"><strong>Spermatogenesis:</strong> Process of sperm formation in males.</li>
-				<li class="glossary-list__item"><strong>Scientific method:</strong> Set of rigorous techniques for observing, experimenting, and drawing reliable conclusions.</li>
-				<li class="glossary-list__item"><strong>Sociology of science:</strong> Study of practices, structures, and social relations in the scientific field.</li>
-				<li class="glossary-list__item"><strong>Committed work:</strong> Book or publication that takes a stand to denounce an injustice or promote social change.</li>
-				<li class="glossary-list__item"><strong>Recognition inequalities:</strong> Disparities in the visibility, credit, and appreciation of scientific work according to gender.</li>
-				<li class="glossary-list__item"><strong>Mobile website:</strong> Site designed to be viewed mainly on smartphones or tablets, with an interface adapted to small screens.</li>
-				<li class="glossary-list__item"><strong>Navigation:</strong> How the user moves and accesses different pages and sections of a website.</li>
-				<li class="glossary-list__item"><strong>Popularization:</strong> Simplified explanation of a scientific or technical concept to make it accessible to a wide audience.</li>
-				<li class="glossary-list__item"><strong>Timeline:</strong> Visual representation of events or information in chronological order.</li>
-				<li class="glossary-list__item"><strong>Gallery:</strong> Section of a website presenting images, videos, or documents in an organized way.</li>
-				<li class="glossary-list__item"><strong>AI (Artificial Intelligence):</strong> Technology capable of generating content or performing tasks usually done by humans.</li>
-			</ul>
-		</section>
-	</main>
+		<h2 class="section__title">Glossary</h2>
+		<div class="section__divider"></div>
 
-	<footer class="footer">
-		<div class="footer__content">
-			<div class="footer__brand">Genesia</div>
-			<p class="footer__desc">Project carried out as part of an educational exercise at the MMI department of Montbéliard</p>
-			<p class="footer__info">To learn more: <a href="https://mmimontbeliard.com" class="footer__link">MMI Montbéliard</a></p>
-			<p class="footer__mail"><a href="mailto:leonie.pruniaux@edu.univ-fcomte.fr">leonie.pruniaux@edu.univ-fcomte.fr</a></p>
+		<section class="glossaire">
+
+			<div class="glossaire__bloc">
+				<div class="glossaire__cat-bulle">
+					<h3 class="glossaire__cat">Nettie Stevens, pioneer of science</h3>
+					<div class="glossaire__divider"></div>
+				</div>
+				<ul class="glossaire__desc">
+					<li><strong>Chromosome</strong>: structure within a cell that contains DNA and therefore genes.</li>
+					<li><strong>DNA (Deoxyribonucleic Acid)</strong>: molecule that carries genetic information in all living organisms.</li>
+					<li><strong>Gene</strong>: a segment of DNA that determines a trait (such as eye color).</li>
+					<li><strong>Chromosomal sex</strong>: way biological sex is defined by X and Y chromosomes (XX = female, XY = male).</li>
+					<li><strong>Cytology</strong>: the scientific study of cells and their functions.</li>
+					<li><strong>Trisomy 21</strong>: genetic condition caused by an extra chromosome 21.</li>
+					<li><strong>Matilda Effect</strong>: the attribution of women scientists’ discoveries to men.</li>
+					<li><strong>Invisibility</strong>: the erasure or neglect of women’s roles in history or science.</li>
+				</ul>
+			</div>
+
+			<div class="glossaire__bloc">
+				<div class="glossaire__cat-bulle">
+					<h3 class="glossaire__cat">Women & scientific literature</h3>
+					<div class="glossaire__divider"></div>
+				</div>
+				<ul class="glossaire__desc">
+					<li><strong>Invisibility</strong>: minimizing or erasing women’s contributions in science.</li>
+					<li><strong>Overlooked figures</strong>: women scientists whose discoveries were ignored or credited to men.</li>
+					<li><strong>Representation</strong>: the way women are portrayed in books, media, or textbooks.</li>
+				</ul>
+			</div>
+
+			<div class="glossaire__bloc">
+				<div class="glossaire__cat-bulle">
+					<h3 class="glossaire__cat">Nettie Stevens’ theory</h3>
+					<div class="glossaire__divider"></div>
+				</div>
+				<ul class="glossaire__desc">
+					<li><strong>Gamete</strong>: reproductive cell (sperm or egg) that transmits half of the genetic material to offspring.</li>
+					<li><strong>Heredity</strong>: transmission of biological traits from one generation to another.</li>
+					<li><strong>Spermatogenesis</strong>: process by which sperm cells are produced in males.</li>
+					<li><strong>Scientific method</strong>: set of rigorous techniques used to observe, experiment, and draw reliable conclusions.</li>
+				</ul>
+			</div>
+
+			<div class="glossaire__bloc">
+				<div class="glossaire__cat-bulle">
+					<h3 class="glossaire__cat">Women of science on screen</h3>
+					<div class="glossaire__divider"></div>
+				</div>
+				<ul class="glossaire__desc">
+					<li><strong>Biopic</strong>: film portraying the life of a real person, often a scientist, artist, or historical figure.</li>
+					<li><strong>Pioneer</strong>: a woman who is among the first to achieve something in a particular field.</li>
+					<li><strong>Resilience</strong>: ability to overcome obstacles or difficulties, particularly in contexts of discrimination.</li>
+					<li><strong>Struggle for recognition</strong>: efforts made by women to gain visibility and credit in science.</li>
+				</ul>
+			</div>
+
+			<div class="glossaire__bloc">
+				<div class="glossaire__cat-bulle">
+					<h3 class="glossaire__cat">Scientific objects through a feminist lens</h3>
+					<div class="glossaire__divider"></div>
+				</div>
+				<ul class="glossaire__desc">
+					<li><strong>Sociology of science</strong>: study of scientific practices, structures, and social relationships.</li>
+					<li><strong>Engaged work</strong>: book or publication that takes a stance to denounce injustice or promote social change.</li>
+					<li><strong>Inequalities in recognition</strong>: disparities in visibility, credit, and valuation of scientific work based on gender.</li>
+				</ul>
+			</div>
+
+			<div class="glossaire__bloc">
+				<div class="glossaire__cat-bulle">
+					<h3 class="glossaire__cat">About</h3>
+					<div class="glossaire__divider"></div>
+				</div>
+				<ul class="glossaire__desc">
+					<li><strong>Mobile website</strong>: website designed primarily for smartphones or tablets.</li>
+					<li><strong>Navigation</strong>: the way users move through and access pages and sections of a website.</li>
+					<li><strong>Popularization</strong>: simplified explanation of scientific or technical concepts for a broad audience.</li>
+					<li><strong>Timeline</strong>: visual representation of events or information in chronological order.</li>
+					<li><strong>Gallery</strong>: section of a website displaying images, videos, or documents in an organized way.</li>
+					<li><strong>AI (Artificial Intelligence)</strong>: technology capable of generating content or performing tasks usually done by humans.</li>
+				</ul>
+			</div>
+<div id="menu-overlay">
+	<div id="menu-overlay__top">
+		<span class="header__lang">EN</span>
+		<a href="#menu-overlay" class="header__menu-btn" aria-label="Menu"><span></span></a>
+	</div>
+	<div class="menu-overlay__header">
+		<a href="index.html" class="menu-overlay__title header__logo">Génésia</a>
+	</div>
+	<nav id="menu-overlay__links">
+		<a href="nettie-stevens.html">Nettie Stevens, pioneer of science</a>
+		<a href="femmes-littérature-sci.html">Women and scientific literature</a>
+		<a href="theorie.html">Nettie Stevens’ theory</a>
+		<a href="femme-ecran.html">Women of science on screen</a>
+		<a href="objet.html">Scientific objects through a feminist lens</a>
+	</nav>
+	<div id="menu-overlay__btns">
+		<a href="a-propos.html">About</a>
+		<a href="contact.html">Contact</a>
+		<a href="glossaire.html">Glossary</a>
+		<a href="autres-projets.html">Other projects</a>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="footer__content">
+		<div class="footer__lignes">
+			<img src="/assets/icons/lignesfooter.svg" alt="Footer decoration" />
 		</div>
-	</footer>
+		<div class="footer__brand">Génésia</div>
+		<div class="footer__socials">
+			<a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+				<img src="/assets/icons/instagenesia.svg" alt="Instagram logo" />
+			</a>
+			<a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+				<img src="/assets/icons/facebookgenesia.svg" alt="Facebook logo" />
+			</a>
+			<a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter/X">
+				<img src="/assets/icons/twittergenesia.svg" alt="Twitter/X logo" />
+			</a>
+		</div>
+		<div class="footer__ligne2">
+			<img src="/assets/icons/lignefooter2.svg" alt="Decorative line" />
+		</div>
+		<p class="footer__desc">
+			Project carried out as part of an educational assignment at the MMI department of Montbéliard
+		</p>
+		<p class="footer__info">
+			Learn more: <a href="https://mmimontbeliard.com" class="footer__link">MMI Montbéliard</a>
+		</p>
+		<p class="footer__mail">
+			<a href="mailto:leonie.pruniaux@edu.univ-fcomte.fr">leonie.pruniaux@edu.univ-fcomte.fr</a>
+		</p>
+	</div>
+</footer>
 </body>
 </html>
