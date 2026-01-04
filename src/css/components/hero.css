@@ -1,3 +1,12 @@
+/* Image femmesdescience plus petite */
+.femmesdescience-img {
+  max-width: 500px;
+  width: 100%;
+  margin: 1em -0.3em auto;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
 .court-metrage-caption {
   color: var(--beige-clair) !important;
   font-size: 1.05em;
