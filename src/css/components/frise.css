@@ -57,7 +57,7 @@
 }
 
 .frise-date {
-  color: #e0cfa2;
+  color: var(--beige-clair);
   font-family: 'Saira SemiCondensed', sans-serif;
   font-size: 1.08em;
   position: absolute;

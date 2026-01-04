@@ -8,10 +8,10 @@
   padding-bottom: 6em !important;
 }
 .projects-list__item {
-  background: rgba(139, 109, 88, 0.199);
+  background: color-mix(in srgb, var(--marron) 20%, transparent);
   border-radius: 13px;
-  border: 1px solid rgba(47, 29, 2, 0.3);
-  box-shadow: 0 2px 8px 0 rgba(45, 26, 13, 0.10);
+  border: 1px solid color-mix(in srgb, var(--marron) 30%, transparent);
+  box-shadow: 0 2px 8px 0 color-mix(in srgb, var(--marron) 10%, transparent);
   padding: 1.1em 1.3em 1.1em 1.3em;
   display: flex;
   flex-direction: column;
@@ -20,14 +20,14 @@
   min-width: 220px;
 }
 .projects-list__author {
-  color: #e6d3b8;
+  color: var(--beige-bulle);
   font-family: 'Volkhov', serif;
   font-size: 1.04em;
   font-weight: 700;
   margin-bottom: 0.9em;
 }
 .projects-list__desc {
-  color: #f8e7c8;
+  color: var(--beige-clair);
   font-family: 'Saira Semi Condensed', Arial, sans-serif;
   font-size: 1em;
   margin-bottom: 0.7em;
@@ -35,7 +35,7 @@
 .projects-list__link {
   align-self: flex-end;
   background: transparent;
-  color: #2d1a0d;
+  color: var(--marron);
   font-family: 'Saira Semi Condensed', Arial, sans-serif;
   font-size: 0.98em;
   font-weight: 600;

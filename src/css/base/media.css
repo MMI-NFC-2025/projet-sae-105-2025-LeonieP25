@@ -4,7 +4,7 @@
   width: 100% !important;
   height: auto !important;  display: block;
   margin: 0.5em auto 1.5em auto;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 10px 0 rgba(45, 26, 13, 0.15); /* harmonisé avec la palette marron */
 }
 
 .section--presentation-livre-BU .section__img {

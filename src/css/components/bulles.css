@@ -1,19 +1,19 @@
 /* BULLES A-PROPOS - Ajout depuis a-propos.css */
 .section__desc.bulle-beige {
-  background: rgba(248, 231, 200, 0.85);
-  border: 1px solid #e2d6c2;
+  background: color-mix(in srgb, var(--beige-clair) 85%, transparent);
+  border: 1px solid var(--beige-bulle);
   border-radius: 12px;
   padding: 1em 1.2em;
   margin: 1.2em 0;
   box-sizing: border-box;
-  box-shadow: 0 2px 14px 0 rgba(45, 26, 13, 0.10);
+  box-shadow: 0 2px 14px 0 color-mix(in srgb, var(--marron) 10%, transparent);
   font-family: 'Saira Semi Condensed', Arial, sans-serif;
   font-size: 1.06em;
-  color: #2f1c0c !important;
+  color: var(--marron-clair) !important;
 }
 .section__desc.bulle-marron {
-  background: rgba(48, 32, 2, 0.122);
-  border: 1px solid #372301;
+  background: color-mix(in srgb, var(--marron) 12%, transparent);
+  border: 1px solid var(--marron-bulle);
   border-radius: 12px;
   padding: 1em 1.2em;
   margin: 1.2em 0;
@@ -21,20 +21,20 @@
   box-shadow: 0 2px 14px 0 rgba(45, 26, 13, 0.10);
   font-family: 'Saira Semi Condensed', Arial, sans-serif;
   font-size: 1.06em;
-  color: #e2d6c2 !important;
+  color: var(--beige-bulle) !important;
 }
 /* BULLES OBJET - Ajout depuis hero-objet.css */
 .section--presentation-livre .section__desc.bulle-marron {
-  background: rgba(75, 46, 25, 0.3);
-  border: 1px solid #2d1a0d;
+  background: color-mix(in srgb, var(--marron) 30%, transparent);
+  border: 1px solid var(--marron);
   border-radius: 18px;
   padding: 1em 1.2em;
   margin: 1.2em 0;
   box-sizing: border-box;
-  box-shadow: 0 2px 14px 0 rgba(45, 26, 13, 0.25);
+  box-shadow: 0 2px 14px 0 color-mix(in srgb, var(--marron) 25%, transparent);
   font-family: 'Saira Semi Condensed';
   font-size: 1.16em;
-  color: var(--beige-section, #f8e7c8);
+  color: var(--beige-section);
 }
 .section--choix-livre .section__desc {
   margin-bottom: 15px !important;
@@ -61,13 +61,13 @@
 .court-metrage-bulle {
   position: relative;
   border-radius: 9px;
-  border: 1.5px solid #2d1c10;
+  border: 1.5px solid var(--marron);
   max-width: 340px;
   width: 100%;
-  color: #e2d6c2;
+  color: var(--beige-bulle);
   font-family: 'Saira SemiCondensed', 'Arial', serif;
   font-size: 1.01em;
-  box-shadow: 0 2px 8px #0003;
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--marron) 30%, transparent);
   padding: 1.1em 1.1em 1.1em 1.1em;
   margin: 1.2em auto 2em auto;
   overflow: hidden;
@@ -77,7 +77,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: #241309;
+  background: var(--marron-foncé);
   opacity: 0.3;
   border-radius: 10px;
   z-index: 0;

@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  background: rgba(245, 235, 220, 0.32); /* beige très translucide */
+  background: color-mix(in srgb, var(--beige-clair) 32%, transparent); /* harmonisé */
   padding: 1.5rem 1rem 1.2rem 1rem;
   margin: 0;
   margin-left: -8px;

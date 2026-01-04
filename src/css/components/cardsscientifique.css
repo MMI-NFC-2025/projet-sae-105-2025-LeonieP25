@@ -24,7 +24,7 @@
 .card-scientifique {
 	background: var(--beige-très-foncé);
 	border-radius: 16px;
-	box-shadow: 0 4px 16px #0005;
+	box-shadow: 0 4px 16px color-mix(in srgb, var(--marron) 30%, transparent);
 	border: 1px solid var(--marron);
 	padding: 1.1em 1.2em 1.5em 1.2em;
 	max-width: 300px;
@@ -45,7 +45,7 @@
 .card-scientifique__title {
 	font-family: 'Baskervville', serif;
 	font-size: 1.18em;
-	color: #3a2b1a;
+	color: var(--marron-bulle);
 	margin-bottom: 0.5em;
 	font-weight: normal;
 	text-decoration: none;
@@ -55,23 +55,23 @@
 	margin-bottom: 1.2em;
 	font-size: 1em;
 	font-family: 'Saira SemiCondensed', sans-serif;
-	color: #4b3a24;
+	color: var(--marron);
 }
 
 .card-scientifique__btn {
 	display: flex;
 	align-items: center;
 	gap: 0.5em;
-	background: #d2c1a1;
-	color: #3a2b1a;
+	background: var(--beige-bulle);
+	color: var(--marron-bulle);
 	border: none;
 	border-radius: 8px;
 	font-family: 'Saira SemiCondensed', 'Arial', sans-serif;
 	font-size: 1em;
 }
 .card-scientifique__btn:hover {
-	background: #e7dbc7;
-	box-shadow: 2px 6px 16px #0003;
+	background: var(--beige-section);
+	box-shadow: 2px 6px 16px color-mix(in srgb, var(--marron) 30%, transparent);
 }
 .card-scientifique__btnimg {
 	height: 4.2em;

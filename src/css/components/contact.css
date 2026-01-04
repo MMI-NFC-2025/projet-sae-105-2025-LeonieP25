@@ -16,10 +16,10 @@ body, html {
 }
 /* --- BULLE PRINCIPALE DU FORMULAIRE --- */
 .contact-bulle {
-	background: rgba(196, 167, 146, 0.182); /* marron plus transparent */
-	border: 1px solid #2d1a0d;
+	background: color-mix(in srgb, var(--marron) 18%, transparent);
+	border: 1px solid var(--marron);
 	border-radius: 7px;
-	box-shadow: 0 2px 14px 0 rgba(45, 26, 13, 0.18);
+	box-shadow: 0 2px 14px 0 color-mix(in srgb, var(--marron) 18%, transparent);
 	padding: 1.2em 1.8em 1.2em 1.8em;
 	max-width: 340px;
 	width: 100%;
@@ -31,7 +31,7 @@ body, html {
 
 /* --- BULLE DU BOUTON ENVOYER --- */
 .contact-bulle-btn {
-	background: rgba(245, 235, 220, 0); /* beige clair plus transparent */
+	background: color-mix(in srgb, var(--beige-clair) 0%, transparent);
 	border-radius: 8px;
 	padding: 0.3em 0.2em;
 	max-width: 100px;
@@ -42,7 +42,7 @@ body, html {
 }
 
 .contact-form__submit {
-	background: #b89b74;
+	background: var(--beige-foncé);
 	color: var(--marron, #2d1a0d);
 	font-family: 'Volkhov', serif;
 	font-size: 1em;
@@ -60,7 +60,7 @@ body, html {
 .contact-form__label {
 	font-family: 'Volkhov', serif;
 	font-size: 1.1em;
-	color: #b89b74;
+	color: var(--beige-foncé);
 	margin-bottom: 0.1em;
 	font-weight: 600;
 	padding-left: 0.7em;

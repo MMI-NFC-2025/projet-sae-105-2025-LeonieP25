@@ -16,7 +16,7 @@
 }
 
 .carousel-ecran .carousel-card {
-  background: rgba(75, 46, 25, 0.03); /* marron, opacité 0.03 */
+  background: color-mix(in srgb, var(--marron) 3%, transparent); /* harmonisé */
   border: 2px solid var(--marron, #4b2e19);
   border-radius: 12px;
   width: 180px;
@@ -49,7 +49,7 @@
 }
 
 .carousel-ecran .carousel-card__title {
-  color: #F8E7C8;
+  color: var(--beige-clair);
   background: transparent;
   font-size: 0.88em !important;
   font-family: 'Volkhov', serif;
@@ -97,7 +97,7 @@
 }
 /* Correction stricte pour le carousel de femme-ecran.html selon la maquette fournie */
 .carousel-ecran .carousel-card {
-  background: rgba(75, 46, 25, 0.3); /* marron, opacité 0.3 */
+  background: color-mix(in srgb, var(--marron) 30%, transparent);
   border: 2px solid var(--marron, #4b2e19);
   border-radius: 16px;
   min-height: 520px;
@@ -108,7 +108,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+  box-shadow: 0 2px 12px 0 color-mix(in srgb, var(--marron) 10%, transparent);
   padding-bottom: 1.2em;
 }
 

@@ -26,14 +26,14 @@
   display: flex;
   justify-content: space-between;
   margin-top: 0.1em;
-  color: #e7dbc7;
+  color: var(--beige-section);
   font-family: 'Baskervville', serif;
   font-size: 1.1em;
 }
 
 .schema-associe__observation {
   background: var(--marron-bulle);
-  color: #e8e1d3;
+  color: var(--beige-section);
   font-family: 'Baskervville', serif;
   font-size: 0.9em;
   border-radius: 8px;
