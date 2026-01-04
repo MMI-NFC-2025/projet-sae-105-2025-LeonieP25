@@ -1,3 +1,7 @@
+/* Réduit l'espace au-dessus des boutons en bas du menu overlay */
+#menu-overlay__btns {
+  margin-top: 3rem !important;
+}
 a.btn.section__btn.full-card-link + .section__title,
 a.btn.section__btn.full-card-link + .section__title.section__title--no-underline {
   border-bottom: none !important;
@@ -31,7 +35,7 @@ a.btn.section__btn.full-card-link + .section__title.section__title--no-underline
 #menu-overlay__links {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3.5rem;
   margin-top: 2rem;
   align-items: flex-start;
   padding-left: 1.2rem;
