@@ -1,3 +1,10 @@
+body[data-page="nettie-stevens"] {
+  background: url('/assets/img/FondDePage.avif') repeat center center fixed !important;
+  background-size: cover !important;
+  background-position: center top !important;
+  background-attachment: fixed !important;
+  filter: none !important;
+}
 /* Bannière titre/dates sous l'image de Nettie et du microscope */
 .hero__banner {
   width: 100%;
