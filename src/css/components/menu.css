@@ -93,6 +93,7 @@ a.btn.section__btn.full-card-link + .section__title.section__title--no-underline
   margin-top: -1rem !important;
   position: relative;
   z-index: 10001;
+  text-decoration: none !important;
 }
 .menu-overlay__close {
   position: absolute;
