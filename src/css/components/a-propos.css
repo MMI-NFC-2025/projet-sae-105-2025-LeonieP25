@@ -1,0 +1,42 @@
+/* Bulle beige pour la page À propos */
+.section__desc.bulle-beige {
+  background: rgba(248, 231, 200, 0.85); /* beige clair avec opacité */
+  border: 1px solid #e2d6c2;
+  border-radius: 12px;
+  padding: 1em 1.2em;
+  margin: 1.2em 0;
+  box-sizing: border-box;
+  box-shadow: 0 2px 14px 0 rgba(45, 26, 13, 0.10);
+  font-family: 'Saira Semi Condensed', Arial, sans-serif;
+  font-size: 1.06em;
+  color: #2f1c0c !important;
+}
+
+/* Bulle marron pour la page À propos */
+.section__desc.bulle-marron {
+  background: rgba(48, 32, 2, 0.122); /* beige clair avec opacité */
+  border: 1px solid #372301;
+  border-radius: 12px;
+  padding: 1em 1.2em;
+  margin: 1.2em 0;
+  box-sizing: border-box;
+  box-shadow: 0 2px 14px 0 rgba(45, 26, 13, 0.10);
+  font-family: 'Saira Semi Condensed', Arial, sans-serif;
+  font-size: 1.06em;
+  color: #e2d6c2 !important;
+}
+
+.a-propos-avatar-container {
+  position: absolute;
+  right: -3.1rem;
+  bottom: -4.2rem;
+  z-index: 2;
+}
+.a-propos-avatar {
+  width: 180px;
+  height: auto;
+  border-radius: 50%;
+}
+.section--presentation {
+  position: relative;
+}
