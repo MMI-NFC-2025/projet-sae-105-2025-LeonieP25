@@ -90,7 +90,7 @@ a.btn.section__btn.full-card-link + .section__title.section__title--no-underline
   text-shadow: 0 5px 10px var(--marron-très-foncé);
   margin: 0 auto;
   display: block;
-  margin-top: -1rem !important;
+  margin-top: 2.2rem !important;
   position: relative;
   z-index: 10001;
   text-decoration: none !important;
