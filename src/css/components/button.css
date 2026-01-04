@@ -1,6 +1,4 @@
-/* 
-Tout ce qui est : .btn, .btn-light
-*/
+
 
 .header__menu-btn {
   width: 75px;
@@ -45,7 +43,7 @@ Tout ce qui est : .btn, .btn-light
 .hero__btn-bottom {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-end;
   position: absolute;
   bottom: 45px;
@@ -53,18 +51,29 @@ Tout ce qui est : .btn, .btn-light
   pointer-events: auto;
 }
 .hero__btn-discover {
-  background: url('/assets/cards/découvrirplus.avif') center/cover no-repeat;
   border: none;
   border-radius: 2rem;
   min-width: 260px;
   min-height: 48px;
-  margin-right: 34vw;
   z-index: 1100;
-  color: transparent;
-  text-indent: -9999px;
   cursor: pointer;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  margin: 0 auto;
 }
+
+/* Image du bouton découvrir plus sur la home FR */
+.btn-img-discover {
+  height: 3.7em !important;
+  max-width: 350px !important;
+  width: 100%;
+  display: block !important;
+  margin-left: -15vw !important;
+  margin-right: 0 !important;
+}
+
 
 #menu-overlay__btns {
 	display: grid;
