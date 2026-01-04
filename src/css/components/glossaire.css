@@ -1,0 +1,27 @@
+/* Styles du glossaire harmonisé */
+
+
+.glossaire {
+  color: var(--beige-clair); /* beige harmonisé */
+}
+
+.glossaire * {
+  color: var(--beige-clair);
+}
+
+/* Optionnel : liens, titres, définitions, etc. */
+
+.glossaire a {
+  color: var(--beige-clair);
+  text-decoration: underline;
+}
+
+.glossaire h1, .glossaire h2, .glossaire h3, .glossaire h4 {
+  color: var(--beige-très-foncé);
+  text-decoration: underline;
+}
+
+
+.glossaire dt, .glossaire dd {
+  color: var(--beige-clair);
+}
