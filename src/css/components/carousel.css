@@ -12,6 +12,7 @@
   padding: 2.5em 1.5em 2em 1.5em;
   border-radius: 0;
   box-shadow: none;
+  margin-left: -2.5em;
 }
 
 .carousel-ecran .carousel-card {
