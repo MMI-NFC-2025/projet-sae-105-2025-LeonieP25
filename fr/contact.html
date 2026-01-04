@@ -12,61 +12,109 @@
 	<meta name="description" content="Formulaire de contact pour joindre l'autrice du site.">
 	<title>Contact — Génésia</title>
 	<link rel="stylesheet" href="/src/css/style.css" />
-	<script type="module" src="/src/js/script.js"></script>
+	<link rel="stylesheet" href="/src/css/components/contact.css" />
+	<link rel="stylesheet" href="/src/css/components/menu.css" />
+	<link rel="stylesheet" href="/src/css/layout/header.css" />
+	<link rel="stylesheet" href="/src/css/layout/footer.css" />
+	<script type="module" src="/src/js/menu.js"></script>
 </head>
 <body style="background: url('/assets/img/FondPourFemmesLittérature.avif') center/cover no-repeat fixed; background-attachment: fixed; background-size: cover; background-position: center; filter: none;">
 	<header class="header">
 		<div class="header__brand">
-			<span class="header__logo">Génésia</span>
-			<span class="header__lang">FR</span>
+			<a href="index.html">
+				<img class="header__logo" src="/assets/icons/logogenesia.svg" alt="Logo Génésia" />
+			</a>
+			<span class="header__subtitle" hidden>Nettie Stevens, pionnière oubliée</span>
+			<span class="header__baseline" hidden>Redécouvrons Nettie Stevens, pionnière de la génétique, et celles qui ont marqué la science.</span>
 		</div>
-		<nav class="header__nav">
-			<ul class="header__menu u-list-unstyled">
-				<li class="header__item"><a class="header__link" href="index.html">Accueil</a></li>
-				<li class="header__item"><a class="header__link" href="femme-ecran.html">Femmes à l’écran</a></li>
-				<li class="header__item"><a class="header__link" href="femmes-littérature-sci.html">Littérature scientifique</a></li>
-				<li class="header__item"><a class="header__link" href="nettie-stevens.html">Nettie Stevens</a></li>
-				<li class="header__item"><a class="header__link" href="objet.html">Objets de science</a></li>
-				<li class="header__item"><a class="header__link" href="a-propos.html">À propos</a></li>
-				<li class="header__item"><a class="header__link header__link--active" href="#">Contact</a></li>
-			</ul>
-		</nav>
+		<span class="header__lang">FR</span>
+		<a href="#menu-overlay" class="header__menu-btn" aria-label="Menu"><span></span></a>
 	</header>
 
 	<main class="main main--dark">
 		<section class="hero hero--contact">
-			<h1 class="hero__title">Contact</h1>
-			<p class="hero__subtitle">contact</p>
+			<section class="hero-femmeslitt">
+				<div class="hero-femmeslitt__container">
+					<div class="hero-femmeslitt__bar hero-femmeslitt__bar--left"></div>
+					<div class="hero-femmeslitt__dot"></div>
+					<div class="hero-femmeslitt__bar hero-femmeslitt__bar--right"></div>
+				</div>
+				<h1 class="hero-femmeslitt__title">Contact</h1>
+				<div class="hero-femmeslitt__underline"></div>
+			</section>
 		</section>
 
 		<section class="section section--contact-form">
-			<h2 class="section__title">Formulaire de contact</h2>
+			<h2 class="section__title">Contact</h2>
 			<div class="section__divider"></div>
 			<form class="contact-form" action="#" method="post">
-				<div class="contact-form__group">
-					<label class="contact-form__label" for="nom">Nom</label>
-					<input class="contact-form__input" type="text" id="nom" name="nom" placeholder="Entrez votre nom ici..." required />
+				<div class="contact-bulle">
+					<div class="contact-form__group">
+						<label class="contact-form__label" for="nom">Nom</label>
+						<input class="contact-form__input" type="text" id="nom" name="nom" placeholder="Entrez votre nom ici..." required />
+					</div>
+					<div class="contact-form__group">
+						<label class="contact-form__label" for="prenom">Prénom</label>
+						<input class="contact-form__input" type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom ici..." required />
+					</div>
+					<div class="contact-form__group">
+						<label class="contact-form__label" for="email">Email</label>
+						<input class="contact-form__input" type="email" id="email" name="email" placeholder="Entrez votre adresse mail ici..." required />
+					</div>
+					<div class="contact-form__group">
+						<label class="contact-form__label" for="message">Message</label>
+						<textarea class="contact-form__textarea" id="message" name="message" placeholder="Entrez votre message ici..." required></textarea>
+					</div>
 				</div>
-				<div class="contact-form__group">
-					<label class="contact-form__label" for="prenom">Prénom</label>
-					<input class="contact-form__input" type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom ici..." required />
+				<div class="contact-bulle-btn">
+					<button class="contact-form__submit" type="submit">Envoyer</button>
 				</div>
-				<div class="contact-form__group">
-					<label class="contact-form__label" for="email">Email</label>
-					<input class="contact-form__input" type="email" id="email" name="email" placeholder="Entrez votre adresse mail ici..." required />
-				</div>
-				<div class="contact-form__group">
-					<label class="contact-form__label" for="message">Message</label>
-					<textarea class="contact-form__textarea" id="message" name="message" placeholder="Entrez votre message ici..." required></textarea>
-				</div>
-				<button class="contact-form__submit" type="submit">Envoyer</button>
 			</form>
 		</section>
 	</main>
 
+	<div id="menu-overlay">
+		<div id="menu-overlay__top">
+			<span class="header__lang">FR</span>
+			<a href="#menu-overlay" class="header__menu-btn" aria-label="Menu"><span></span></a>
+		</div>
+		<div class="menu-overlay__header">
+			<a href="index.html" class="menu-overlay__title header__logo">Génésia</a>
+		</div>
+		<nav id="menu-overlay__links">
+			<a href="nettie-stevens.html">Nettie Stevens, pionnière des sciences</a>
+			<a href="femmes-littérature-sci.html">Femmes et littérature scientifique</a>
+			<a href="theorie.html">La théorie de Nettie Stevens</a>
+			<a href="femme-ecran.html">Femme de science à l'écran</a>
+			<a href="objet.html">Objet de science au féminin</a>
+		</nav>
+		<div id="menu-overlay__btns">
+			<a href="a-propos.html">À Propos</a>
+			<a href="contact.html">Contact</a>
+			<a href="glossaire.html">Glossaire</a>
+			<a href="autres-projets.html">Autres Projets</a>
+		</div>
+	</div>
 	<footer class="footer">
 		<div class="footer__content">
+			<div class="footer__lignes">
+				<img src="/assets/icons/lignesfooter.svg" alt="Décor footer" />
+			</div>
 			<div class="footer__brand">Génésia</div>
+			<div class="footer__socials">
+				<a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+					<img src="/assets/icons/instagenesia.svg" alt="Logo Instagram" />
+				</a>
+				<a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+					<img src="/assets/icons/facebookgenesia.svg" alt="Logo Facebook" />
+				</a>
+				<a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter/X">
+					<img src="/assets/icons/twittergenesia.svg" alt="Logo Twitter/X" />
+				</a>
+			</div>
+			<div class="footer__ligne2">
+				<img src="/assets/icons/lignefooter2.svg" alt="Ligne décorative" />
+			</div>
 			<p class="footer__desc">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</p>
 			<p class="footer__info">Pour en savoir plus : <a href="https://mmimontbeliard.com" class="footer__link">MMI Montbéliard</a></p>
 			<p class="footer__mail"><a href="mailto:leonie.pruniaux@edu.univ-fcomte.fr">leonie.pruniaux@edu.univ-fcomte.fr</a></p>

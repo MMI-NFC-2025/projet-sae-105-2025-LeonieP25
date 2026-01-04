@@ -1,0 +1,80 @@
+/* --- LISTES DU GLOSSAIRE SANS PUCE --- */
+.glossaire__desc {
+	list-style: none;
+	padding-left: 0;
+}
+.glossaire__desc li {
+	position: relative;
+	padding-left: 0;
+	margin-bottom: 0.5em;
+}
+/* --- MARGE A DROITE POUR LE TITRE DE SECTION --- */
+.section__title {
+	margin-left: 0.8em !important;
+}
+
+/* --- GLOSSAIRE PRINCIPAL --- */
+.glossaire {
+	display: flex;
+	flex-direction: column;
+	gap: 2.2em;
+	margin: 2.5em auto 2.5em auto;
+	max-width: 420px;
+}
+
+/* --- BLOC DEFINITION --- */
+.glossaire__bloc {
+	background: rgba(75, 46, 25, 0.13);
+	border-radius: 10px;
+	position: relative;
+}
+
+
+/* --- BULLE DE CATEGORIE (titre + barre) --- */
+.glossaire__cat {
+	color: var(--beige-clair, #f8e7c8);
+	font-family: 'Volkhov', serif;
+	font-size: 1.13em;
+	font-weight: 700;
+	margin-bottom: 0.13em;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	background: none;
+	border-radius: 0;
+	padding: 0;
+	line-height: 1.1;
+}
+.glossaire__divider {
+	width: 2.7em;
+	height: 3px;
+	background: var(--marron-clair);
+	border-radius: 2px;
+	margin-bottom: 0;
+	margin-top: 0.08em;
+}
+/* --- TEXTE DEFINITION --- */
+.glossaire__desc {
+	color: #f8e7c8;
+	font-family: 'Saira Semi Condensed', Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.5;
+	margin: 8;
+	margin-left: 0.6em;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 600px) {
+	.glossaire {
+		max-width: 98vw;
+		margin: 1.2em 0.2em 1.2em 0.2em;
+	}
+	.glossaire__bloc {
+		padding: 1em 0.5em 1em 0.5em;
+	}
+
+	.glossaire__divider {
+		width: 70vw;
+		min-width: 80px;
+		max-width: 120px;
+	}
+}

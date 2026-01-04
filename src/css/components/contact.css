@@ -1,0 +1,112 @@
+/* Footer collé en bas de page */
+body, html {
+	height: 100%;
+}
+.main {
+	min-height: calc(100vh - 220px); /* Ajuste selon la hauteur du footer */
+	display: flex;
+	flex-direction: column;
+}
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100vw;
+	z-index: 100;
+}
+/* --- BULLE PRINCIPALE DU FORMULAIRE --- */
+.contact-bulle {
+	background: rgba(196, 167, 146, 0.182); /* marron plus transparent */
+	border: 1px solid #2d1a0d;
+	border-radius: 7px;
+	box-shadow: 0 2px 14px 0 rgba(45, 26, 13, 0.18);
+	padding: 1.2em 1.8em 1.2em 1.8em;
+	max-width: 340px;
+	width: 100%;
+	margin: 0 5em 1.2em -0.4em;
+	display: flex;
+	flex-direction: column;
+	gap: 1.1em;
+}
+
+/* --- BULLE DU BOUTON ENVOYER --- */
+.contact-bulle-btn {
+	background: rgba(245, 235, 220, 0); /* beige clair plus transparent */
+	border-radius: 8px;
+	padding: 0.3em 0.2em;
+	max-width: 100px;
+    margin-bottom: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-form__submit {
+	background: #b89b74;
+	color: var(--marron, #2d1a0d);
+	font-family: 'Volkhov', serif;
+	font-size: 1em;
+	font-weight: 600;
+	padding: 0.3em 1.2em !important;
+	border-radius: 7px;
+}
+
+/* --- CHAMPS DU FORMULAIRE --- */
+.contact-form__group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0.2em;
+}
+.contact-form__label {
+	font-family: 'Volkhov', serif;
+	font-size: 1.1em;
+	color: #b89b74;
+	margin-bottom: 0.1em;
+	font-weight: 600;
+	padding-left: 0.7em;
+}
+	.contact-form__input,
+	.contact-form__textarea {
+		width: 70%;
+		background: transparent;
+		border: none;
+		border-bottom: 2px solid var(--marron, #2d1a0d);
+		font-size: 1em;
+		font-family: 'Saira Semi Condensed', Arial, sans-serif;
+		color: var(--beige-très-clair, #f8e7c8);
+		padding-left: 0em;
+		padding-right: 0.1em;
+		padding-top: 0.3em;
+		padding-bottom: 0.3em;
+		margin-bottom: 0.2em;
+		box-shadow: none;
+		display: block;
+		margin-left: 0.7em;
+	}
+.contact-form__input::placeholder,
+.contact-form__textarea::placeholder {
+	color: var(--marron, #2d1a0d);
+	opacity: 1;
+}
+/* --- TITRE DE SECTION --- */
+.section--contact-form .section__title {
+	color: var(--beige-très-clair, #f8e7c8);
+	font-family: 'Volkhov', serif;
+	font-size: 1.2em;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	margin-bottom: 0.7em;
+	text-transform: uppercase;
+}
+
+
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 480px) {
+	.contact-bulle {
+		max-width: 98vw;
+		padding: 1em 0.2em;
+	}
+	.contact-bulle-btn {
+		max-width: 90vw;
+	}
+}
