@@ -1,11 +1,4 @@
-/* Fond spécifique pour femmes-littérature-sci.html */
-.bg-femmeslitt {
-  background: url('/assets/img/FondPourFemmesLittérature.avif') center/cover no-repeat fixed;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  filter: none;
-}
+
 /* Uniformisation des propriétés de toutes les images de fond */
 body {
   background-size: cover;

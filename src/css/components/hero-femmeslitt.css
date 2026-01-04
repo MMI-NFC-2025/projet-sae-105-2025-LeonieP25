@@ -1,3 +1,10 @@
+body[data-page="femmes-littérature-sci"] {
+  background: url('/assets/img/FondPourFemmesLittérature.avif') center/cover no-repeat fixed !important;
+  background-size: cover !important;
+  background-position: center top !important;
+  background-attachment: fixed !important;
+  filter: none !important;
+}
 .section.section.section--matilda {
   margin-top: -4.5em;
 }
@@ -5,14 +12,7 @@
 .section.section--matilda .section__divider {
   margin-top: 1.5em;
 }
-/* Fond spécifique uniquement pour la page Femmes et littérature scientifique */
-body.bg-femmeslitt {
-  background: url('/assets/img/FondPourFemmesLittérature.avif') center/cover no-repeat fixed !important;
-  background-size: cover !important;
-  background-position: center top !important;
-  background-attachment: fixed !important;
-  filter: none !important;
-}
+
 
 .hero-femmeslitt {
   display: flex;
