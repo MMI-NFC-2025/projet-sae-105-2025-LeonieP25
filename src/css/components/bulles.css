@@ -1,3 +1,88 @@
+/* BULLES A-PROPOS - Ajout depuis a-propos.css */
+.section__desc.bulle-beige {
+  background: rgba(248, 231, 200, 0.85);
+  border: 1px solid #e2d6c2;
+  border-radius: 12px;
+  padding: 1em 1.2em;
+  margin: 1.2em 0;
+  box-sizing: border-box;
+  box-shadow: 0 2px 14px 0 rgba(45, 26, 13, 0.10);
+  font-family: 'Saira Semi Condensed', Arial, sans-serif;
+  font-size: 1.06em;
+  color: #2f1c0c !important;
+}
+.section__desc.bulle-marron {
+  background: rgba(48, 32, 2, 0.122);
+  border: 1px solid #372301;
+  border-radius: 12px;
+  padding: 1em 1.2em;
+  margin: 1.2em 0;
+  box-sizing: border-box;
+  box-shadow: 0 2px 14px 0 rgba(45, 26, 13, 0.10);
+  font-family: 'Saira Semi Condensed', Arial, sans-serif;
+  font-size: 1.06em;
+  color: #e2d6c2 !important;
+}
+/* BULLES OBJET - Ajout depuis hero-objet.css */
+.section--presentation-livre .section__desc.bulle-marron {
+  background: rgba(75, 46, 25, 0.3);
+  border: 1px solid #2d1a0d;
+  border-radius: 18px;
+  padding: 1em 1.2em;
+  margin: 1.2em 0;
+  box-sizing: border-box;
+  box-shadow: 0 2px 14px 0 rgba(45, 26, 13, 0.25);
+  font-family: 'Saira Semi Condensed';
+  font-size: 1.16em;
+  color: var(--beige-section, #f8e7c8);
+}
+.section--choix-livre .section__desc {
+  margin-bottom: 15px !important;
+}
+.section--choix-livre {
+  margin-top: -88px !important;
+}
+/* BULLES FEMMESLITT - Ajout depuis hero-femmeslitt.css */
+.bulle-desc {
+  background: var(--beige-clair);
+  opacity: 0.8;
+  border-radius: 18px;
+  padding: 0em 1em;
+  margin: 1.7em auto 2em auto;
+  text-align: center;
+  font-family: 'Saira SemiCondensed', serif;
+  font-size: 1.15em;
+  font-style: italic;
+  color: var(--beige-clair) !important;
+  max-width: 370px;
+  width: 90%;
+}
+/* BULLES HERO ECRAN - Ajout depuis hero-ecran.css */
+.court-metrage-bulle {
+  position: relative;
+  border-radius: 9px;
+  border: 1.5px solid #2d1c10;
+  max-width: 340px;
+  width: 100%;
+  color: #e2d6c2;
+  font-family: 'Saira SemiCondensed', 'Arial', serif;
+  font-size: 1.01em;
+  box-shadow: 0 2px 8px #0003;
+  padding: 1.1em 1.1em 1.1em 1.1em;
+  margin: 1.2em auto 2em auto;
+  overflow: hidden;
+  background: none;
+}
+.court-metrage-bulle::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #241309;
+  opacity: 0.3;
+  border-radius: 10px;
+  z-index: 0;
+  pointer-events: none;
+}
 /* Bulle citation style */
 .bulle-citation {
   border-radius: 8px;

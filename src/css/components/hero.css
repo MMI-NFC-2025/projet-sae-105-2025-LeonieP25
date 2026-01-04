@@ -1,3 +1,22 @@
+.court-metrage-caption {
+  color: var(--beige-clair) !important;
+  font-size: 1.05em;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.hero-femmeslitt__subtitle {
+  color: var(--beige-clair);
+  font-style: italic;
+  font-family: 'Baskervville', serif;
+  font-size: 1.18em;
+  margin-left: 1.2em;
+  margin-top: 2em;
+  margin-bottom: 1.2em;
+  max-width: 600px;
+  letter-spacing: 0.01em;
+  line-height: 1.5;
+}
 /* === HERO ACCUEIL - Génésia, version concise === */
 .hero_image {
   position: relative;
@@ -15,6 +34,79 @@
   margin-left: -0.75rem;
   margin-right: 0;
   width: calc(100% + 0.75rem);
+}
+/* === HERO TITRES AVEC BARRES ET DOT === */
+.hero-femmeslitt, .hero-objet, .hero-theorie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4.5rem;
+  margin-bottom: 2.2rem;
+}
+.hero-femmeslitt__container, .hero-objet__container, .hero-theorie__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.hero-femmeslitt__bar, .hero-objet__bar, .hero-theorie__bar {
+  height: 2px;
+  background: var(--beige-clair);
+  flex: 1 1 60px;
+  max-width: 70px;
+  min-width: 20px;
+}
+.hero-femmeslitt__bar--left, .hero-objet__bar--left, .hero-theorie__bar--left {
+  margin-right: 0.7rem;
+}
+.hero-femmeslitt__bar--right, .hero-objet__bar--right, .hero-theorie__bar--right {
+  margin-left: 0.7rem;
+}
+.hero-femmeslitt__dot, .hero-objet__dot, .hero-theorie__dot {
+  width: 10px;
+  height: 10px;
+  background: var(--beige-clair);
+  border-radius: 50%;
+  margin: 0 0.2rem;
+}
+.hero-femmeslitt__title, .hero-objet__title, .hero-theorie__title {
+  color: var(--beige-clair);
+  font-family: 'Volkhov', serif;
+  font-size: 23px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.01em;
+}
+.hero-theorie__title {
+  font-size: 21px;
+}
+.hero-theorie__subtitle {
+  color: var(--beige-clair);
+  font-style: italic;
+  font-family: 'Baskervville', serif;
+  margin-left: 1.2em;
+  margin-top: 2em;
+  max-width: 600px;
+}
+.hero-femmeslitt__underline, .hero-objet__underline, .hero-theorie__underline {
+  width: 90%;
+  max-width: 260px;
+  height: 2px;
+  background: var(--beige-clair);
+  margin: 0 auto;
+}
+@media (min-width: 600px) {
+  .hero-femmeslitt__title, .hero-objet__title, .hero-theorie__title {
+    font-size: 18px;
+  }
+  .hero-femmeslitt__bar, .hero-objet__bar, .hero-theorie__bar {
+    max-width: 60px;
+  }
+  .hero-femmeslitt__underline, .hero-objet__underline, .hero-theorie__underline {
+    max-width: 500px;
+  }
 }
 
 @media (min-width: 1024px) {
