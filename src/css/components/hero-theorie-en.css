@@ -15,21 +15,6 @@ main[class*="hero-theorie-bg"] {
   position: relative;
   z-index: 0;
 }
-.hero-theorie-bg.main--dark::before,
-.main--dark.hero-theorie-bg::before,
-main.hero-theorie-bg::before,
-main[class*="hero-theorie-bg"]::before {
-  content: '';
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  z-index: -1;
-  background: url('/assets/img/FondDePageTheorie.avif'), #f8e7c8;
-  background-repeat: repeat;
-  background-position: center top;
-  background-attachment: fixed;
-  background-size: cover;
-  pointer-events: none;
-}
 /* Styles spécifiques pour le hero de la page theorie.html (FR) */
 
 .hero-theorie {
