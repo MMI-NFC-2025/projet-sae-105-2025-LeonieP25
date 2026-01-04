@@ -43,3 +43,16 @@
   z-index: 0;
   pointer-events: none;
 }
+
+.section__desc.bulle-marron {
+  background: rgba(75, 46, 25, 0.3); /* marron avec opacité 0.3 */
+  border: 1px solid #2d1a0d; /* marron plus foncé */
+  border-radius: 18px;
+  padding: 1em 1.2em;
+  margin: 1.2em 0;
+  box-sizing: border-box;
+  box-shadow: 0 2px 14px 0 rgba(45, 26, 13, 0.25);
+  font-family: 'Saira Semi Condensed';
+  font-size: 1.16em;
+  color: var(--beige-section, #f8e7c8);
+}
