@@ -9,7 +9,7 @@
   box-shadow: 0 2px 14px 0 color-mix(in srgb, var(--marron) 10%, transparent);
   font-family: 'Saira Semi Condensed', Arial, sans-serif;
   font-size: 1.06em;
-  color: var(--marron-clair);
+  color: var(--marron) !important;
 }
 .section__desc.bulle-marron {
   background: color-mix(in srgb, var(--marron) 12%, transparent);
