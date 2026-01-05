@@ -26,3 +26,29 @@
 @import "components/body.css";
 @import "components/schema-associe.css";
 @import "components/cardsscientifique.css";
+
+/* Bouton remonter en haut de la page - légèrement plus haut */
+.goup-btn {
+  position: fixed;
+  right: 0.5rem;
+  bottom: 1.5rem;
+  width: 72px;
+  height: 72px;
+  z-index: 99999;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+  opacity: 0.85;
+}
+.goup-btn img {
+  width: 56px;
+  height: 56px;
+}
+.goup-btn:hover {
+  opacity: 1;
+}

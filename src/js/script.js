@@ -12,3 +12,12 @@ document.addEventListener('DOMContentLoaded', function() {
 		});
 	}
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  var goupBtn = document.querySelector('.goup-btn');
+  if (goupBtn) {
+    goupBtn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+});
