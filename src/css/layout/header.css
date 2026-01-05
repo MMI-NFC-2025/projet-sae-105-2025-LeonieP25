@@ -77,6 +77,7 @@ img.header__logo {
 }
 .header__lang {
   font-family: 'Spectral', serif;
+  text-decoration: none !important;
   font-size: 18px;
   color: var(--beige-très-clair);
   text-shadow: 0 5px 8px var(--marron-très-foncé);
