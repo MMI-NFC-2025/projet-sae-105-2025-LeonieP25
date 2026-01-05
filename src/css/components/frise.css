@@ -15,7 +15,7 @@
   justify-content: flex-start;
   width: 520px;
   min-height: 220px;
-  background: none !important;
+  background: none;
   border-radius: 0;
   box-shadow: none;
   position: relative;
@@ -23,15 +23,15 @@
 }
 
 .frise-img {
-  width: 260px !important;
-  height: 310px !important;
+  width: 260px;
+  height: 310px;
   object-fit: cover;
   border-radius: 50% / 44%;
   margin: 0 0 0 1.2em;
-  box-shadow: none !important;
-  border: none !important;
-  background: none !important;
-  margin-left: 0.2em !important;
+  box-shadow: none;
+  border: none;
+  background: none;
+  margin-left: 0.2em;
   margin-right: 2.2em;
 }
 
@@ -63,12 +63,12 @@
   position: absolute;
   left: 0.7em;
   top: 1.1em;
-  background: none !important;
+  background: none;
   padding: 0.18em 0.7em;
-  border-radius: 0 !important;
-  box-shadow: none !important;
+  border-radius: 0;
+  box-shadow: none;
   z-index: 2;
-  margin-right: 0.5em !important;
+  margin-right: 0.5em;
 }
 
 .frise-desc {

@@ -1,12 +1,13 @@
 /* Réduit l'espace au-dessus des boutons en bas du menu overlay */
+/* Marge spécifique pour les boutons du menu overlay */
 #menu-overlay__btns {
-  margin-top: 2.2rem !important;
+  margin-top: 2.2rem;
 }
 a.btn.section__btn.full-card-link + .section__title,
 a.btn.section__btn.full-card-link + .section__title.section__title--no-underline {
-  border-bottom: none !important;
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 /* Ajoute un border-bottom sous les titres de section */
 .section__title {
@@ -16,8 +17,8 @@ a.btn.section__btn.full-card-link + .section__title.section__title--no-underline
 /* Empêche le scroll de la page quand le menu overlay est actif */
 .menu-overlay-active html,
 .menu-overlay-active body {
-  overflow: hidden !important;
-  height: 100vh !important;
+  overflow: hidden;
+  height: 100vh;
 }
 /* Overlay menu avec fond fondpagemenu.avif */
 #menu-overlay {
@@ -26,20 +27,20 @@ a.btn.section__btn.full-card-link + .section__title.section__title--no-underline
   z-index: 9999;
   background: url('/assets/img/fondpagemenu.avif') center/cover no-repeat;
   display: none;
-  overflow: hidden !important;
-  height: 100vh !important;
+  overflow: hidden;
+  height: 100vh;
   padding: 0;
 }
 
 .menu-overlay-active html, .menu-overlay-active body {
-  overflow: hidden !important;
-  height: 100vh !important;
-  position: fixed !important;
-  width: 100vw !important;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
 }
 
 #menu-overlay.active {
-	display: block;
+  display: block;
 }
 #menu-overlay__links {
   display: flex;
@@ -90,10 +91,10 @@ a.btn.section__btn.full-card-link + .section__title.section__title--no-underline
   text-shadow: 0 5px 10px var(--marron-très-foncé);
   margin: 0 auto;
   display: block;
-  margin-top: 2.2rem !important;
+  margin-top: 2.2rem;
   position: relative;
   z-index: 10001;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 .menu-overlay__close {
   position: absolute;
@@ -176,5 +177,11 @@ a.btn.section__btn.full-card-link + .section__title.section__title--no-underline
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 #menu-overlay__top .header__menu-btn span {
+  display: none;
+}
+
+/* Cache le bouton Go Up quand le menu overlay est actif */
+.menu-overlay-active .goup-btn,
+#menu-overlay.active ~ .goup-btn {
   display: none;
 }

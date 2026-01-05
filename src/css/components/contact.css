@@ -1,32 +1,17 @@
-/* Footer collé en bas de page */
-body, html {
-	height: 100%;
-}
-.main {
-	min-height: calc(100vh - 220px); /* Ajuste selon la hauteur du footer */
-	display: flex;
-	flex-direction: column;
-}
-.footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100vw;
-	z-index: 100;
-}
+/* Footer collé en bas de page : déjà présent dans faq.css, supprimé ici pour éviter les doublons */
 /* --- BULLE PRINCIPALE DU FORMULAIRE --- */
 .contact-bulle {
-	background: color-mix(in srgb, var(--marron) 18%, transparent);
-	border: 1px solid var(--marron);
-	border-radius: 7px;
-	box-shadow: 0 2px 14px 0 color-mix(in srgb, var(--marron) 18%, transparent);
-	padding: 1.2em 1.8em 1.2em 1.8em;
-	max-width: 340px;
-	width: 100%;
-	margin: 0 5em 1.2em -0.4em;
-	display: flex;
-	flex-direction: column;
-	gap: 1.1em;
+  background: color-mix(in srgb, var(--marron) 18%, transparent);
+  border: 1px solid var(--marron);
+  border-radius: 7px;
+  box-shadow: 0 2px 14px 0 color-mix(in srgb, var(--marron) 18%, transparent);
+  padding: 1.2em 1.8em;
+  max-width: 340px;
+  width: 100%;
+  margin: 0 5em 1.2em -0.4em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1em;
 }
 
 /* --- BULLE DU BOUTON ENVOYER --- */

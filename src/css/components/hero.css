@@ -8,7 +8,7 @@
   display: block;
 }
 .court-metrage-caption {
-  color: var(--beige-clair) !important;
+  color: var(--beige-clair);
   font-size: 1.05em;
   text-align: center;
   margin-top: 8px;
@@ -131,5 +131,5 @@
   color: var(--beige-très-clair);
 }
 .header__menu {
-  display: none !important;
+  display: none;
 }
