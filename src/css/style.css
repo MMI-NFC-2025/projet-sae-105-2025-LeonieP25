@@ -19,9 +19,9 @@
 @import "components/cardsaccueil.css";
 @import "components/home.css";
 @import "components/menu.css";
-@import "components/hero-femmeslitt.css";
-@import "components/hero-theorie.css";
-@import "components/hero-theorie-en.css";
+/* @import "components/hero-femmeslitt.css"; supprimé car fichier absent */
+/* @import "components/hero-theorie.css"; supprimé car fichier absent */
+/* @import "components/hero-theorie-en.css"; supprimé car fichier absent */
 @import "components/frise.css";
 @import "components/body.css";
 @import "components/schema-associe.css";
